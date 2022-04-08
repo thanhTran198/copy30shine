@@ -4,11 +4,11 @@ import Footer from './footer'
 
 import shop from './shop.module.css';
 import home from './home.module.css';
-import slider1 from '../asset/imgs/home/sliderImg1.jpg'
-import slider2 from '../asset/imgs/home/sliderImg2.jpg'
-import slider3 from '../asset/imgs/home/sliderImg3.jpg'
-import slider4 from '../asset/imgs/home/sliderImg4.jpg'
-import slider5 from '../asset/imgs/home/sliderImg5.jpg'
+import slider1 from '../../../copy30shine/src/asset/imgs/home/sliderImg1.jpg'
+import slider2 from '../../../copy30shine/src/asset/imgs/home/sliderImg2.jpg'
+import slider3 from '../../../copy30shine/src/asset/imgs/home/sliderImg3.jpg'
+import slider4 from '../../../copy30shine/src/asset/imgs/home/sliderImg4.jpg'
+import slider5 from '../../../copy30shine/src/asset/imgs/home/sliderImg5.jpg'
 import imgCombo1 from '../asset/imgs/home/combo-1.jpg'
 import imgSub1Combo1 from '../asset/imgs/home/sub1.jpg'
 import imgSub2Combo1 from '../asset/imgs/home/sub2.jpg'
