@@ -499,7 +499,6 @@ function Home() {
             }else {
                 iconAngelsRight.current.style.cursor = 'pointer'
             }
-            // thêm transform khi render lại giao diện
             listAngels.current.style = `transform: translateX(-${transform}%)`
         })
 
@@ -1111,18 +1110,18 @@ function Home() {
                     textAll = 'Xem tất cả'
                 />
                 <FourItem 
-                    itemImg1 = {imgNearestHCM}
-                    itemService1 = "TP.Hồ Chí Minh"
-                    priceList1 = "40 Salon"
-                    itemImg2 = {imgNearestDN}
-                    itemService2 = "Hà Nội"
-                    priceList2 = "18 Salon"
-                    itemImg3 = {imgNearestHN}
-                    itemService3 = "Đà Nẵng"
-                    priceList3 = "1 Salon"
                     itemImg4 = {imgNearestOther}
                     itemService4 = "Thành Phố Khác"
                     priceList4 = "20 Salon"
+                    itemImg3 = {imgNearestHN}
+                    itemService3 = "Đà Nẵng"
+                    priceList3 = "1 Salon"
+                    itemImg2 = {imgNearestDN}
+                    itemService2 = "Hà Nội"
+                    priceList2 = "18 Salon"
+                    itemImg1 = {imgNearestHCM}
+                    itemService1 = "TP.Hồ Chí Minh"
+                    priceList1 = "40 Salon"
                     mgBt50
                 />
             </div>
