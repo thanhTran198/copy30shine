@@ -1,0 +1,721 @@
+#page {
+    position: relative;
+}
+/* phần navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    /* margin-top: 70px; */
+    height: 42px;
+    background-color: rgb(255 204 51);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 70px auto 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbarList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 1244px;
+    margin: 0 auto;
+}
+
+.navbarItem {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbarItem:hover .navbarItemText {
+    color: #fff;
+}
+
+.navbarCateegoryCateegoryList {
+    display: flex;
+    align-items: center;
+}
+
+.navbarItemText {
+    font-weight: 600;
+}
+
+.navbarCateegoryCateegory:hover .navbarCateegoryCateegoryList{
+    color: #fff;
+}
+
+.navbarCateegoryCateegory:hover .navbarCateegoryContainerList{
+    display: block;
+}
+
+/*  navbar Category */
+
+.navbarCateegory {
+    position: relative;
+}
+
+/*  list phần danh mục */
+
+.navbarCateegoryContainerList {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 42px;
+    left: 0;
+    background-color:#fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.178);
+}
+
+.navbarCateegoryList {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 1244px;
+    margin: 0 auto;
+}
+
+.navbarCateegoryItem {
+    margin: 26px 0;
+}
+
+.navbarCateegoryItemProduct {
+    margin: 10px 0;
+}
+
+.navbarCateegoryItemHeading:hover {
+    color: rgb(251 197 36);
+}
+.navbarCateegoryItemProduct:hover {
+    color: rgb(251 197 36);
+    
+}
+
+/* phần thương hiệu độc quyền */
+.exclusiveBrandContainer:hover .exclusiveBrand{
+    color: #fff;
+}
+.exclusiveBrandContainer:hover .containerTrademark {
+    display: block;
+}
+
+.exclusiveBrand {
+    display: flex;
+    align-items: center;
+}
+
+.containerTrademark {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 42px;
+    left: 0;
+    background-color:#fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.178);
+}
+
+.exclusiveBrandList {
+    list-style: none;
+    width: 1244px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.exclusiveBrandItem {
+    padding: 6px 0;
+}
+
+.exclusiveBrandItem:hover {
+    color: rgb(251 197 36);
+}
+
+/*  phần slider  */
+.slider {
+    width: 100%;
+    margin-top: 90px;
+    height: 578px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.sliderImg1,.sliderImg2 {
+    width: 100%;
+    transition: transform .25s linear;
+}
+
+.imgMinus100 {
+    transform: translateX(-100%);
+}
+
+.imgMinus200 {
+    transform: translateX(-200%);
+}
+
+.img100 {
+    transform: translateX(100%);
+}
+
+.zIndex1 {
+    z-index: 1;
+}
+.zIndex2 {
+    z-index: 2;
+}
+
+.sliderIconLeft, .sliderIconRight {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    transform:translateY(-50%);
+    padding: 14px;
+    background-color: rgba(51, 51, 51, 0.137);
+    border-radius: 50%;
+    color: #fff;
+}
+
+.sliderIconLeft:active, .sliderIconRight:active {
+    opacity: 0.8;
+}
+
+.sliderIconLeft {
+    left: 16px;
+    top: 50%;
+}
+.sliderIconRight  {
+    right: 16px;
+    top: 50%;
+}
+
+/* cam kết */
+.commitServiceList {
+    width: 1244px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgb(209 209 209);
+}
+
+.commitServiceItem {
+    text-decoration: none;
+    margin: 22px 0;
+    padding: 8px 0 8px 40px;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgb(209 209 209);
+}
+.commitServiceItem:first-child {
+    padding-left: 0;
+    border: none;
+}
+
+.commitServiceText {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.commitProduct {
+    display: flex;
+    justify-content: space-between;
+    width: 1244px;
+    margin: 34px auto;
+}
+
+.commitProductLink {
+    text-decoration: none;
+    width: 152px;
+    text-align: center;
+}
+
+.commitProductImg {
+    width: 94px;
+}
+
+.commitProductText {
+    color: #000;
+    font-size: 18px;
+}
+
+/* top sản phẩm nổi bật */
+
+.containerHighlights {
+    width: 1244px;
+    margin: 34px auto;
+}
+
+.highlights {
+    /* width: 1244px;
+    margin: 34px auto; */
+    border-bottom: 3px solid #e54d3e;
+}
+
+.highlightsTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlightsTitleAllProduct {
+    display: flex;
+    align-items: center;
+}
+
+.highlightsTitleText {
+    color: #e54d3e;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.highlightsTitleAllProductText {
+    color: #000;
+    font-size: 18px;
+}
+
+/* danh sách sản phẩm nổi bật */
+
+.highlightsContainerListProduct {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.highlightsListProduct {
+    margin-top: 10px;
+    display: flex;
+    /* overflow: hidden; */
+    transition: transform 0.5s linear;
+}
+
+.productItem {
+    width: 230px;
+    border: 1px solid rgba(109, 109, 109, 0.192);
+    border-radius:5px;
+    margin: 20px 11px; 
+    padding: 4px;
+    text-decoration: none;
+    position: relative;
+}
+
+.productItem:hover {
+    box-shadow: 0 0 6px rgba(20, 20, 20, 0.205);
+}
+
+.productItem:first-child {
+    margin-left: 0;
+}
+
+.productItemImg {
+    width: 222px;
+    border-radius:5px;
+}
+
+.productItemDetail {
+    padding: 0 12px;
+}
+
+.productItemName {
+    height: 42px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #000;
+}
+
+.productItemPrices {
+    padding-top: 10px;
+}
+
+.productItemPrice {
+    color: rgb(229 77 62);
+    font-size: 18px;
+    font-weight:700;
+}
+
+.productItemOldPrice {
+    color: rgb(163, 163, 163);
+    margin-left: 4px;
+    text-decoration: line-through;
+}
+
+.productItemStar {
+    color: rgb(255 219 113);
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.saleLabel {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    background-color: #e54d3e;
+    width: 56px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.saleLabel::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    border-width: 16px 28px 1px;
+    border-style: solid;
+    border-color: rgb(229, 77, 62) transparent transparent transparent;
+}
+
+.saleLabel::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 56px;
+    border-width: 12px 7px 0px;
+    border-style: solid;
+    border-color: transparent rgba(229,77,62,.75) transparent transparent;
+
+}
+
+.saleLabelSale {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listStoryIconRight, .listStoryIconLeft {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 24px;
+    background-color: rgba(48, 42, 42, 0.199);
+    color: #fff;
+    cursor: pointer;
+}
+
+.listStoryIconRight:active, .listStoryIconLeft:active {
+    opacity: 0.8;
+}
+
+.listStoryIconRight {
+    right: 10px;
+}
+
+.listStoryIconLeft {
+    left: 10px;
+}
+
+/* combo  */
+.comboHighlights {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comboHighlightsImg {
+    width: 400px;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+
+/* sản phẩm đề xuất */
+
+.ProductSuggestion {
+    width: 100%;
+}
+
+.productSuggestionBanner {
+    position: relative;
+}
+
+.productSuggestionBannerImg {
+    width: 100%;
+    height: 186px;
+}
+
+.productSuggestionBannerText {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.productSuggestionBannerTextTitle {
+    font-size: 26px;
+}
+
+.productSuggestionBannerTextSubText {
+    font-size: 22px;
+}
+
+.productSuggestionProduct {
+    width: 100%;
+    position: relative;
+}
+
+.productSuggestionContainerCategory {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -53px;
+    width: 1240px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(226, 226, 226, 0.432);
+}
+
+.productSuggestionCategory {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.productSuggestionCategoryItem {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/* sản phẩm */
+.productSuggestionListProduct {
+    width: 1240px;
+    margin:  0 auto;
+    padding: 4px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.productsItem {
+    display: block;
+    width: 230px;
+    border: 1px solid rgba(109, 109, 109, 0.192);
+    border-radius:5px;
+    margin: 20px 0px; 
+    padding: 4px;
+    text-decoration: none;
+    position: relative;
+}
+
+.productsItem:hover {
+    box-shadow: 0 0 6px rgba(20, 20, 20, 0.205);
+}
+
+.productsItem:first-child {
+    margin-left: 0;
+}
+
+.productsItemImg {
+    width: 222px;
+    border-radius:5px;
+}
+
+.productsItemDetail {
+    padding: 0 12px;
+}
+
+.productsItemName {
+    height: 42px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #000;
+}
+
+.productsItemPrices {
+    padding-top: 10px;
+}
+
+.productsItemPrice {
+    color: rgb(229 77 62);
+    font-size: 18px;
+    font-weight:700;
+}
+
+.productsItemOldPrice {
+    color: rgb(163, 163, 163);
+    margin-left: 4px;
+    text-decoration: line-through;
+}
+
+.productsItemStar {
+    color: rgb(255 219 113);
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.saleLabel {
+    display: none;
+    position: absolute;
+    top: -12px;
+    right: 0;
+    background-color: #e54d3e;
+    width: 56px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.saleLabel::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    border-width: 16px 28px 1px;
+    border-style: solid;
+    border-color: rgb(229, 77, 62) transparent transparent transparent;
+}
+
+.saleLabel::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 56px;
+    border-width: 12px 7px 0px;
+    border-style: solid;
+    border-color: transparent rgba(229,77,62,.75) transparent transparent;
+
+}
+
+.saleLabelSale {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.seeMoreProducts {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 155px;
+    height: 46px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.seeMoreProductsText {
+    margin-right: 10px;
+}
+
+/* thương hiệu */
+.trademark {
+    width: 1240px;
+    margin: 48px auto;
+    position: relative;
+}
+
+.trademarkTitle {
+    margin-bottom: 48px;
+}
+
+.trademarkContainer {
+    width: 1240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.trademarkList {
+    display: flex;
+    transition: transform .25s linear;
+}
+
+.trademarkItem {
+    margin: 10px 6px;
+    width: 196px;
+    border: 1px solid rgba(51, 51, 51, 0.068);
+    border-radius:5px;
+}
+
+.trademarkItem:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.178);
+}
+
+.trademarkItem:first-child {
+    margin-left: 0;
+}
+
+/* cam kết */
+
+.ContainerListCommit {
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+
+.listCommit {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.listCommitContainerItem {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.listCommitItem {
+    display: flex;
+    align-items: center;
+    width: 264px;
+    margin: 30px 0;
+}
+
+.listCommitItemImg {
+    height: 70px;
+}
+
+.listCommitText {
+    font-size: 18px;
+}
+
+/* icon left right */
+
+.trademarkIconRight, .trademarkIconLeft {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 24px;
+    background-color: rgba(48, 42, 42, 0.199);
+    color: #fff;
+    cursor: pointer;
+}
+
+.trademarkIconRight:active, .trademarkIconLeft:active {
+    opacity: 0.8;
+}
+
+.trademarkIconRight {
+    right: 4px;
+}
+
+.trademarkIconLeft {
+    left: 4px;
+}

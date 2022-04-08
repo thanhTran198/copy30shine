@@ -1,0 +1,107 @@
+.hairStyle {
+    margin-top: 70px;
+}
+
+.hairStyleBody {
+    width: 1174px;
+    margin: 0 auto;
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* heading */
+.ContainerButton {
+
+}
+
+.buttonList {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonItem {
+    padding: 12px;
+    min-width: 160px;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    text-align: center;
+    border-radius: 60px;
+    margin: 72px 6px 55px 6px;
+    cursor: pointer;
+}
+
+.buttonItem:active {
+    opacity: 0.8;
+}
+
+.HeadingHairStyleText {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.HeadingHairStyleSubText {
+    font-weight: 600;
+}
+
+/* bodyHairStyle */
+.bodyHairStyle {
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 30px;
+}
+
+.bodyHairStyleListPillar1 {
+    margin: 0 8px;
+}
+
+.imageItem {
+    width: 222px;
+    position: relative;
+    margin: 10px 0;
+    display: block;
+}
+
+.imageItemimg {
+    width: 222px;
+    border-radius: 6px;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+}
+
+.imageItemInteractive {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+}
+
+.imageItemIconHeart {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.356);
+    border-radius: 50%;
+}
+
+.imageItemIconShare {
+    margin-top: 16px;
+    display: flex;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.356);
+    border-radius: 50%;
+}
+
+.imageItemText {
+    padding: 0 10px;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-shadow: 0 0 8px #000;
+}

@@ -1,38 +1,164 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
 .App {
+  /* width: 1174px;
+  margin: 0 auto; */
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.178);
+}
+
+.navbarCenter {
+  width: 1174px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo30shine {
+  width: 80px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navbar-item {
+  margin: 0 8px;
+}
+
+.navbar-item-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.login-btn:active {
+  opacity: 0.7;
+}
+
+.login-btn {
+  background-color: #fc3;
+  height: 36px;
+  width: 140px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login-btn-img {
+  width: 30px;
+}
+
+.login-btn--text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.modalColor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* z-index: 19; */
+  background-color: rgba(131, 131, 131, 0.274);
+}
+
+.modalContent {
+  width: 450px;
+  height: 270px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pageLogin {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.pageLoginTitle {
+  font-size: 20px;
+  font-weight:600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageLoginPhone {
+  font-size: 18px;
+  color: #a3a3a3;
+}
+
+.modalInput {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #a3a3a3;
+}
+
+
+.btnModalLogin {
+  padding: 12px 50px;
+  background-color: #fc3;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btnModalLogin:active{
+  opacity: 0.8;
+}
+
+.modalIconClos {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modalIconClos:active {
+  opacity: 0.8;
 }

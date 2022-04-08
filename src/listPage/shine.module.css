@@ -1,0 +1,179 @@
+
+.containerHoverZom:hover img { 
+    transform: scale(1.03);
+}
+
+.hoverZom { 
+    transition: all 0.3s ease-in-out;
+}
+
+.Dplaynone {
+    display: none;
+}
+
+/* littleStoryItem */
+.littleStoryItem {
+    width: 270px;
+    height: 304px;
+    overflow: hidden;
+    border-radius:10px;
+    border: 1px solid rgba(51, 51, 51, 0.192); 
+    margin: 16px 0;
+}
+
+.littleStoryItem:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.411);
+}
+
+.littleStoryItem:hover .LittleStoryImg{
+    transform: scale(1.03);
+}
+
+.LittleStoryContainerImg {
+    width: 270px;
+    height: 134px;
+    overflow: hidden;
+}
+
+.LittleStoryImg {
+    width: 270px;
+    transition: all 0.3s ease-in-out;
+}
+
+.LittleStoryContent {
+    margin: 0 10px;
+}
+
+.LittleStoryTextTitle {
+    height: 52px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.LittleStorySubTextTitle {
+    height: 44px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.LittleStoryWatch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.LittleStoryIconYoutube {
+    height: 26px;
+}
+
+
+.bodyShine {
+    width: 1174px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.headingIntroduceTitle {
+    padding: 30px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.headingIntroduceText {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.headingIntroduceText {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.headingListPosts {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.headingListPostsItem {
+    width: 570px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+}
+
+.headingListPostsItem:hover .headingImg {
+    transform: scale(1.03);
+}
+
+.headingListPostsItem:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.411);
+}
+
+.headingImg {
+    transition: all 0.3s ease-in-out;
+}
+
+.headingContainerImg {
+    width: 570px;
+    height: 284px;
+    overflow: hidden;
+}
+
+.headingImg {
+    width: 570px;
+}
+
+.headingListPosts1Content, .headingListPosts2Content {
+    margin: 0 10px;
+}
+
+.headingListPostsTitle {
+    height: 66px;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+  
+}
+
+.headingListPostsText {
+    height: 46px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.headingListPostsIconYoutube {
+    height: 24px;
+}
+
+.headingListPostsToWatch {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;  
+}
+
+.headingListPostsViews {
+    font-size: 12px;
+}
+
+.LittleStoryView {
+    font-size: 12px;
+}
+
+/* danh sách các câu chuyện */
+.listLittleStory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,683 @@
+:root {
+    --subText-color: #a6a6a6;
+}
+
+.mgBt50 {
+    margin-bottom: 50px;
+}
+
+.containerHoverZom:hover img { 
+    transform: scale(1.03);
+}
+
+.hoverZom { 
+    transition: all 0.3s ease-in-out;
+}
+
+.width0 {
+    width: 0;
+    overflow: hidden;
+}
+
+.homeNone {
+    display: none;
+}
+
+.contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+}
+.contactContainerPhone {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.contactContainerMessage {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+}
+.contactImgMessage {
+    padding-top: 8px;
+    height: 52px;
+    transform: translateX(20%);
+}
+.contactImgPhone {
+    height: 50px;
+    transform: translateX(-3%);
+    padding-top: 14px;
+}
+
+/* phần slider chuyển động */
+.img100 {
+    transform: translateX(100%);
+}
+.img200 {
+    transform: translateX(200%);
+}
+.img300 {
+    transform: translateX(300%);
+}
+.img400 {
+    transform: translateX(400%);
+}
+.img500 {
+    transform: translateX(500%);
+}
+.imgMinus100 {
+    transform: translateX(-100%);
+}
+.imgMinus200 {
+    transform: translateX(-200%);
+}
+.imgMinus300 {
+    transform: translateX(-300%);
+}
+.imgMinus400 {
+    transform: translateX(-400%);
+}
+.imgMinus500 {
+    transform: translateX(-500%);
+}
+.img0 {
+    transform: translateX(0)
+}
+
+
+/* hết phần slider chuyển động */
+
+
+
+.iconNext svg, .iconBack svg {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 50%;
+}
+
+.iconNext svg {
+    right: 30px;
+}
+.iconBack svg {
+    left: 30px;
+}
+
+.containerSlider {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.sliderItem1, .sliderItem2,.sliderItem3,.sliderItem4,.sliderItem5 {
+    transition: transform .25s linear;
+}
+
+.sliderItemImg {
+    transition: transform .25s linear;
+    height: 82%;
+    /* height: 100%;
+    width: 100%; */
+}
+
+/* body */
+
+.bodyService {
+    width: 1174px;
+    margin: 0 auto;
+}
+
+.bodyTitle {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.bodyTitleNoneMtop {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.bodyTitleFirst {
+    flex: 1;
+}
+
+.bodyTitleFirstTitle {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.bodyTitleFirstSubtitle {
+    font-size: 18px;
+    color: var(--subText-color);
+}
+
+.bodyTitleAll {
+    display: flex;
+    align-items: center;
+    color: #2f80ed;
+    text-decoration: none;
+}
+
+.bodyTitleAllText {
+    font-size: 18px;
+}
+
+.bodyTitleAllIcon {
+    margin-left: 6px;
+    font-size:20px;
+}
+
+.bodyTitleAll:hover {
+    text-decoration: revert;
+}
+
+.bodyServiceContainerImg {
+    width: 100%;
+    height: 391px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.bodyServiceImg {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.bodyList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyItem {
+    display: flex;
+    align-items: center;
+}
+
+.bodyItemContainerImg {
+    height: 102px;
+    width: 102px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.bodyItemImg {
+    border-radius: 8px;
+    height: 102px;
+}
+
+.bodyItemTitle {
+    margin-left: 16px;
+    /* margin-right: 26px; */
+    width: 160px;
+}
+
+.bodyItemService {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bodyItemServiceSub {
+    color: #686868;
+    font-size: 18px;
+}
+
+/* lắng nghe và tận tâm */
+
+.centerTheTitle {
+    width: 1174px;
+    margin: 0 auto;
+}
+
+.listenList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listenItem {
+    width: 315px;
+    list-style: none;
+}
+
+.listenItemContainerImg {
+    width: 315px;
+    height: 315px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.listenItemImg {
+    height: 315px;
+}
+
+.listenItemText {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* thay đổi ngoại hình */
+.containerListStory {
+    position: relative;
+    overflow: hidden;
+}
+
+.listStory {
+    display: flex;
+    list-style: none;
+    transition: transform .25s linear;
+}
+
+.listStoryItem {
+    margin: 0 14px;
+}
+.listStoryItem:first-child {
+    margin-left: 0;
+}
+.listStoryItem:last-child {
+    margin-right: 0;
+}
+
+.listStoryItemContainerImg {
+    height: 286px;
+    width: 572px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.listStoryItemImg {
+    height: 286px;
+    width: 572px;
+    border-radius: 8px;
+}
+
+.listStoryText {
+    color: #111;
+}
+
+.listStoryIconRight, .listStoryIconLeft {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 24px;
+    background-color: rgba(48, 42, 42, 0.199);
+    color: #fff;
+    cursor: pointer;
+}
+
+.listStoryIconRight:active, .listStoryIconLeft:active {
+    opacity: 0.8;
+}
+
+.listStoryIconRight {
+    right: 10px;
+}
+
+.listStoryIconLeft {
+    left: 10px;
+}
+
+/* Angels */
+.containerAngels {
+    overflow: hidden;
+    position: relative;
+}
+
+.angelsList {
+    position: relative;
+    display: flex;
+    list-style: none;
+    transition: transform .25s linear;
+}
+
+.angelsItem {
+    margin: 0 16px;
+}
+.angelsItem:first-child {
+    margin-left: 0;
+}
+.angelsItem:last-child {
+    margin-right: 0;
+}
+
+.angelsItemImgContainer {
+    width: 320px;
+    height: 424px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.angelsItemImg {
+    width: 320px;
+    height: 424px;
+    border-radius: 8px;
+}
+
+.angelsDescriptionDetailed {
+    color: #686868;
+}
+
+.angelsIconLeft,.angelsIconRight {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 24px;
+    background-color: rgba(48, 42, 42, 0.199);
+    color: #fff;
+}
+
+.angelsIconLeft {
+    left: 10px;
+}
+
+.angelsIconRight {
+    right: 10px;
+}
+
+
+/* Store */
+
+.storeIntroduction {
+    position: absolute;
+    top: 70%;
+    width: 65%;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Artist - phần nghệ sĩ đến store */
+
+.containerArtistList {
+    overflow: hidden;
+    position: relative;
+}
+
+.artistList {
+    display: flex;
+    list-style: none;
+    transition: transform .25s linear;
+}
+
+.artistListItem {
+    margin: 0 14px;
+}
+.artistListItem:first-child {
+    margin-left: 0;
+}
+.artistListItem:last-child {
+    margin-right: 0;
+}
+
+.artistListContainerImg {
+    height: 286px;
+    width: 570px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.artistListImg {
+    height: 286px;
+    width: 570px;
+}
+
+/* phần Khám phá kiểu tóc */
+
+.newHairstyleContainerImg {
+    width: 1172px;
+    height: 378px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.newHairstyleImg {
+    width: 1172px;
+    height: 378px;
+    border-radius: 8px;
+}
+
+.newHairstyleList {
+    display: flex;
+    margin-top: 32px;
+}
+
+.newHairstyleItem {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.newHairstyleItemContainerImg {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius:8px;
+}
+
+.newHairstyleItemImg {
+    width: 100px;
+    height: 100px;
+}
+
+.newHairstyleItemSub {
+    margin-left: 16px;
+}
+
+.newHairstyleItemIitle {
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.newHairstyleItemSunTitle {
+    font-size: 18px;
+}
+
+/*  mục ưu đãi */
+.containerEndow {
+    overflow: hidden;
+    position: relative;
+}
+
+.endow {
+    display: flex;
+    list-style: none;
+    transition: transform .25s linear;
+}
+
+.endowItem {
+    margin: 0 16px;
+}
+.endowItem:first-child {
+    margin-left: 0;
+}
+.endowItem:last-child {
+    margin-right: 0;
+}
+
+
+.endowContainerImg {
+    width: 312px;
+    height: 312px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.endowImg {
+    width: 312px;
+    height: 312px;
+    border-radius: 8px;
+}
+
+.endowText {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* mục 30shine shop */
+.containerProductList {
+    overflow: hidden;
+    position: relative;
+}
+
+.productList {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 50px;
+    transition: transform .25s linear;
+}
+
+.productItem {
+    margin: 0 10px;
+    /* width: 242px; */
+}
+
+.productItemImg {
+    height: 242px;
+}
+
+.productItemName {
+    overflow: hidden;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    
+}
+
+.productItemPriceContainer {
+    display: flex;
+    margin: 8px 0;
+    align-items: center;
+}
+
+.productItemPrice {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.productItemPriceSub {
+    margin-left: 10px;
+    text-decoration: line-through;
+    font-size: 16px;
+    color: var(--subText-color);
+}
+
+.productItemButton {
+    display: flex;
+    background-color: #fc3;
+    padding: 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.productItemButton:hover {
+    opacity: 0.8;
+}
+
+.twoLineImageTitle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.twoLineImageTitleTagH2 {
+    font-size: 28px;
+}
+
+
+/* phần shine moment */
+.containerMomentList {
+    position: relative;
+    overflow: hidden;
+}
+
+.momentList {
+    display: flex;
+    list-style: none;
+    transition: transform .25s linear;
+}
+
+.momentItem {
+    margin: 0 16px;
+}
+.momentItem:first-child {
+    margin-left: 0;
+}
+.momentItem:last-child {
+    margin-right: 0;
+}
+
+.momentItemImgContainer {
+    width: 320px;
+    height: 424px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.momentItemImg {
+    width: 320px;
+    height: 424px;
+    border-radius: 8px;
+}
+
+.momentDescriptionDetailed {
+    color: #686868;
+}
+
+.momentIconLeft,.momentIconRight {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 24px;
+    background-color: rgba(48, 42, 42, 0.199);
+    color: #fff;
+}
+
+.momentIconLeft {
+    left: 10px;
+}
+
+.momentIconRight {
+    right: 10px;
+}
