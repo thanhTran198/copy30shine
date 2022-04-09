@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { FaAngleRight, FaAngleLeft, FaArrowRight } from 'react-icons/fa'
-import Footer from './footer'
+import Footer from './Footer'
 
 import shop from './shop.module.css';
 import home from './home.module.css';

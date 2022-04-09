@@ -1,6 +1,6 @@
 import shop from './shop.module.css';
-import Footer from './footer'
-import Contact from './home'
+import Footer from './Footer'
+import Contact from './Home'
 import css from './nearest.module.css'
 import { useRef,useState } from 'react';
 import { AiOutlineDown, AiOutlineEnvironment,AiFillPhone,AiOutlineArrowRight } from "react-icons/ai";

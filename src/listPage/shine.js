@@ -1,7 +1,7 @@
 import shop from './shop.module.css';
-import Footer from './footer'
+import Footer from './Footer'
 import css from './shine.module.css'
-import Contact from './home'
+import Contact from './Home'
 
 import imgHeading1 from '../asset/imgs/shine/imgsHeading/30shine-lot-xac-thanh-hot-boy.jpg'
 import imgHeading2 from '../asset/imgs/shine/imgsHeading/30shine-toc-mullet.jpg'

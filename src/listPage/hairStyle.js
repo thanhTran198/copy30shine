@@ -1,7 +1,7 @@
-import Footer from './footer'
+import Footer from './Footer'
 import css from './hairStyle.module.css'
 import { FaHeart,  FaShare } from 'react-icons/fa';
-import Contact from './home'
+import Contact from './Home'
 
 import imgItemA1 from '../asset/imgs/hairStyle/a1.jpg'
 import imgItemA2 from '../asset/imgs/hairStyle/a2.jpg'

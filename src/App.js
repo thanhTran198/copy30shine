@@ -1,12 +1,12 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { useRef } from "react"
 import './App.css';
-import Home from './listPage/home'
-import Experience from './listPage/experience'
-import Shine from './listPage/shine'
-import HairStyle from './listPage/hairStyle'
+import Home from './listPage/Home'
+import Experience from './listPage/Experience'
+import Shine from './listPage/Shine'
+import HairStyle from './listPage/HairStyle'
 import Nearest from './listPage/nearest'
-import HairStore from './listPage/30shineShop'
+import HairStore from './listPage/Shop30shine'
 import { AiFillCloseCircle } from "react-icons/ai";
 
 import logo30shine from './asset/imgs/log-30shine.jpg'
@@ -30,7 +30,6 @@ function App() {
 
   return (
     <div className="App">
-      
       <div ref={moda} className="modal">
         <div onClick={()=>{handaleModalClos()}} className="modalColor"></div>
         <div className="modalContent">
@@ -54,16 +53,16 @@ function App() {
           </div>
           <ul className="navbar-list">
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/trai-nghiem-dich-vu/">TRẢI NGHIỆM DỊCH VỤ</Link>
+              <Link className="navbar-item-link" to="/trai-nghiem-dich-vu">TRẢI NGHIỆM DỊCH VỤ</Link>
             </li>
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/hanh-trinh-toa-sang/">HÀNH TRÌNH TỎA SÁNG</Link>
+              <Link className="navbar-item-link" to="/hanh-trinh-toa-sang">HÀNH TRÌNH TỎA SÁNG</Link>
             </li>
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/kham-pha-kieu-toc/">KHÁM PHÁ KIỂU TÓC</Link>
+              <Link className="navbar-item-link" to="/kham-pha-kieu-toc">KHÁM PHÁ KIỂU TÓC</Link>
             </li>
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/30shine-shop/">30SHINE SHOP</Link>
+              <Link className="navbar-item-link" to="/30shine-shop">30SHINE SHOP</Link>
             </li>
             <li className="navbar-item">
               <Link className="navbar-item-link" to="/30shine-gan-nhat">TÌM 30SHINE GẦN NHẤT</Link>
@@ -78,11 +77,11 @@ function App() {
       <Routes>
         <Route path="" element={<Home/>} />
         <Route path="/" element={<Home/>} />
-        <Route path="/trai-nghiem-dich-vu/" element={<Experience/>} />
-        <Route path="/hanh-trinh-toa-sang/" element={<Shine/>} />
-        <Route path="/kham-pha-kieu-toc/" element={<HairStyle/>} />
-        <Route path="/30shine-shop/" element={<HairStore/>} />
-        <Route path="/30shine-gan-nhat/" element={<Nearest/>} />
+        <Route path="/trai-nghiem-dich-vu" element={<Experience/>} />
+        <Route path="/hanh-trinh-toa-sang" element={<Shine/>} />
+        <Route path="/kham-pha-kieu-toc" element={<HairStyle/>} />
+        <Route path="/30shine-shop" element={<HairStore/>} />
+        <Route path="/30shine-gan-nhat" element={<Nearest/>} />
       </Routes>
     </div>
   );
