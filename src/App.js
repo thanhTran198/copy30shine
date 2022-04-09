@@ -68,7 +68,7 @@ function App() {
               <Link className="navbar-item-link" to="/30shine-gan-nhat">TÌM 30SHINE GẦN NHẤT</Link>
             </li>
           </ul>
-          <div onClick={()=>{return(handaleModalClos())}} className="login-btn">
+          <div onClick={()=>{handaleModalClos()}} className="login-btn">
             <img className="login-btn-img" src={iconLogin}/>
             <p className="login-btn--text">ĐĂNG NHẬP</p>
           </div>
