@@ -216,16 +216,16 @@ function Home() {
             <div className={home.containerSlider}>
                 <div className={home.slider}>
                     <div ref={sliderItem1} className={`${home.sliderItem1}`}>
-                        <img className={`${home.sliderItemImg}`} src={`${sliderImg1}`}/>
+                        <img className={`${home.sliderItemImg}`} src='https://photos.app.goo.gl/KVk9BFRZ5sbDmq6j9'/>
                     </div>
                     <div ref={sliderItem2} className={home.sliderItem2}>
-                        <img className={home.sliderItemImg} src={`${sliderImg2}`}/>
+                        <img className={home.sliderItemImg} src={`https://photos.app.goo.gl/KVk9BFRZ5sbDmq6j9`}/>
                     </div>
                     <div ref={sliderItem3} className={home.sliderItem3}>
-                        <img className={home.sliderItemImg} src={`${sliderImg3}`}/>
+                        <img className={home.sliderItemImg} src={`https://photos.app.goo.gl/KVk9BFRZ5sbDmq6j9`}/>
                     </div>
                     <div ref={sliderItem4} className={home.sliderItem4}>
-                        <img className={home.sliderItemImg} src={`${sliderImg4}`}/>
+                        <img className={home.sliderItemImg} src={`https://photos.app.goo.gl/KVk9BFRZ5sbDmq6j9`}/>
                     </div>
                     <div ref={sliderItem5} className={home.sliderItem5}>
                         <img className={home.sliderItemImg} src={`${sliderImg5}`}/>
