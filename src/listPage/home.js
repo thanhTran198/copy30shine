@@ -4,11 +4,11 @@ import Footer from './footer'
 
 import shop from './shop.module.css';
 import home from './home.module.css';
-import slider1 from '../../../copy30shine/src/asset/imgs/home/sliderImg1.jpg'
-import slider2 from '../../../copy30shine/src/asset/imgs/home/sliderImg2.jpg'
-import slider3 from '../../../copy30shine/src/asset/imgs/home/sliderImg3.jpg'
-import slider4 from '../../../copy30shine/src/asset/imgs/home/sliderImg4.jpg'
-import slider5 from '../../../copy30shine/src/asset/imgs/home/sliderImg5.jpg'
+import sliderImg1 from '../asset/imgs/home/sliderImg1.jpg'
+import sliderImg2 from '../asset/imgs/home/sliderImg2.jpg'
+import sliderImg3 from '../asset/imgs/home/sliderImg3.jpg'
+import sliderImg4 from '../asset/imgs/home/sliderImg4.jpg'
+import sliderImg5 from '../asset/imgs/home/sliderImg5.jpg'
 import imgCombo1 from '../asset/imgs/home/combo-1.jpg'
 import imgSub1Combo1 from '../asset/imgs/home/sub1.jpg'
 import imgSub2Combo1 from '../asset/imgs/home/sub2.jpg'
@@ -113,7 +113,7 @@ function Home() {
         }
 
         function handleSlider() {
-            if(srcSlider == 1) {
+            if(srcSlider === 1) {
                 // console.log('số 1')
                 sliderItem1.current.classList.remove(`${home.img0}`)
                 sliderItem2.current.classList.remove(`${home.img0}`)
@@ -127,7 +127,7 @@ function Home() {
                 sliderItem4.current.classList.add(`${home.imgMinus100}`)
                 sliderItem5.current.classList.add(`${home.imgMinus100}`)
                 setSrcSlider(srcSlider + 1)
-            }else if(srcSlider == 2) {
+            }else if(srcSlider === 2) {
                 // console.log('số 2')
                 sliderItem1.current.classList.remove(`${home.img400}`)
                 sliderItem2.current.classList.remove(`${home.imgMinus100}`)
@@ -142,7 +142,7 @@ function Home() {
                 sliderItem5.current.classList.add(`${home.imgMinus200}`)
                 setSrcSlider(srcSlider + 1)
             }
-            else if(srcSlider == 3) {
+            else if(srcSlider === 3) {
                 // console.log('số 3')
                 sliderItem1.current.classList.remove(`${home.img300}`)
                 sliderItem2.current.classList.remove(`${home.img300}`)
@@ -157,7 +157,7 @@ function Home() {
                 sliderItem5.current.classList.add(`${home.imgMinus300}`)
                 setSrcSlider(srcSlider + 1)
             }
-            else if(srcSlider == 4) {
+            else if(srcSlider === 4) {
                 // console.log('số 4')
                 sliderItem1.current.classList.remove(`${home.img200}`)
                 sliderItem2.current.classList.remove(`${home.img200}`)
@@ -172,7 +172,7 @@ function Home() {
                 sliderItem5.current.classList.add(`${home.imgMinus400}`)
                 setSrcSlider(srcSlider + 1)
             }
-            else if(srcSlider == 5) {
+            else if(srcSlider === 5) {
                 // console.log('số 5')
                 sliderItem1.current.classList.remove(`${home.img100}`)
                 sliderItem2.current.classList.remove(`${home.img100}`)
@@ -201,12 +201,10 @@ function Home() {
         
        const handleTransferPhotos = (command) => {
             if(command == 'right') {
-                console.log('tiến')
                 clearTimeout(setTimeSlider)
                 setSrcSlider(srcSlider + 1)
                 handleSlider()
             }else if(command == 'left') {
-                console.log('lùi')
                 clearTimeout(setTimeSlider)
                 setSrcSlider(srcSlider - 1)
                 handleSlider()
@@ -218,19 +216,19 @@ function Home() {
             <div className={home.containerSlider}>
                 <div className={home.slider}>
                     <div ref={sliderItem1} className={`${home.sliderItem1}`}>
-                        <img className={`${home.sliderItemImg}`} src={slider1}/>
+                        <img className={`${home.sliderItemImg}`} src={`${sliderImg1}`}/>
                     </div>
                     <div ref={sliderItem2} className={home.sliderItem2}>
-                        <img className={home.sliderItemImg} src={slider2}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg2}`}/>
                     </div>
                     <div ref={sliderItem3} className={home.sliderItem3}>
-                        <img className={home.sliderItemImg} src={slider3}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg3}`}/>
                     </div>
                     <div ref={sliderItem4} className={home.sliderItem4}>
-                        <img className={home.sliderItemImg} src={slider4}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg4}`}/>
                     </div>
                     <div ref={sliderItem5} className={home.sliderItem5}>
-                        <img className={home.sliderItemImg} src={slider5}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg5}`}/>
                     </div>
                 </div>
                 <i onClick={()=>{handleTransferPhotos('right')}} className={`${home.listStoryIconLeft} ${home.sliderIconLeft}`}><FaAngleLeft/></i>
