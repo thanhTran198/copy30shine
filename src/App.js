@@ -48,22 +48,22 @@ function App() {
       <div className="navbar">
         <div className="navbarCenter">
           <div className="container-logo30shine">
-            <Link to="/copy30shine">
+            <Link to="/copy30shine/">
               <img className="logo30shine" src={logo30shine} alt="logo30shine"/>
             </Link>
           </div>
           <ul className="navbar-list">
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/copy30shine/trai-nghiem-dich-vu">TRẢI NGHIỆM DỊCH VỤ</Link>
+              <Link className="navbar-item-link" to="/copy30shine/trai-nghiem-dich-vu/">TRẢI NGHIỆM DỊCH VỤ</Link>
             </li>
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/copy30shine/hanh-trinh-toa-sang">HÀNH TRÌNH TỎA SÁNG</Link>
+              <Link className="navbar-item-link" to="/copy30shine/hanh-trinh-toa-sang/">HÀNH TRÌNH TỎA SÁNG</Link>
             </li>
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/copy30shine/kham-pha-kieu-toc">KHÁM PHÁ KIỂU TÓC</Link>
+              <Link className="navbar-item-link" to="/copy30shine/kham-pha-kieu-toc/">KHÁM PHÁ KIỂU TÓC</Link>
             </li>
             <li className="navbar-item">
-              <Link className="navbar-item-link" to="/copy30shine/30shine-shop">30SHINE SHOP</Link>
+              <Link className="navbar-item-link" to="/copy30shine/30shine-shop/">30SHINE SHOP</Link>
             </li>
             <li className="navbar-item">
               <Link className="navbar-item-link" to="/copy30shine/30shine-gan-nhat">TÌM 30SHINE GẦN NHẤT</Link>
@@ -77,12 +77,12 @@ function App() {
       </div>
       <Routes>
         <Route path="" element={<Home/>} />
-        <Route path="/copy30shine" element={<Home/>} />
-        <Route path="/copy30shine/trai-nghiem-dich-vu" element={<Experience/>} />
-        <Route path="/copy30shine/hanh-trinh-toa-sang" element={<Shine/>} />
-        <Route path="/copy30shine/kham-pha-kieu-toc" element={<HairStyle/>} />
-        <Route path="/copy30shine/30shine-shop" element={<HairStore/>} />
-        <Route path="/copy30shine/30shine-gan-nhat" element={<Nearest/>} />
+        <Route path="/copy30shine/" element={<Home/>} />
+        <Route path="/copy30shine/trai-nghiem-dich-vu/" element={<Experience/>} />
+        <Route path="/copy30shine/hanh-trinh-toa-sang/" element={<Shine/>} />
+        <Route path="/copy30shine/kham-pha-kieu-toc/" element={<HairStyle/>} />
+        <Route path="/copy30shine/30shine-shop/" element={<HairStore/>} />
+        <Route path="/copy30shine/30shine-gan-nhat/" element={<Nearest/>} />
       </Routes>
     </div>
   );
