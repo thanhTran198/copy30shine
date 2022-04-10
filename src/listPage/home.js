@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { FaAngleRight, FaAngleLeft, FaArrowRight } from 'react-icons/fa'
 import Footer from './Footer'
+import Contact from './Contact'
 
 import shop from './shop.module.css';
 import home from './home.module.css';
@@ -91,8 +92,6 @@ import imgNearestHCM from '../asset/imgs/home/nearest/salon-hcm.png'
 import imgNearestDN from '../asset/imgs/home/nearest/salon-danang.png'
 import imgNearestHN from '../asset/imgs/home/nearest/salon-hanoi.png'
 import imgNearestOther from '../asset/imgs/home/nearest/salon-other.png'
-import imgMessage from '../asset/imgs/home/contact/messenger.png'
-import imgPhone from '../asset/imgs/home/contact/phoneNew.png'
 
 
 function Home() {
@@ -233,20 +232,6 @@ function Home() {
                 </div>
                 <i onClick={()=>{handleTransferPhotos('right')}} className={`${home.listStoryIconLeft} ${home.sliderIconLeft}`}><FaAngleLeft/></i>
                 <i onClick={()=>{handleTransferPhotos('left')}} className={`${home.listStoryIconRight} ${home.sliderIconRight}`}><FaAngleRight/></i>
-            </div>
-        )
-    }
-
-    // nút liên hệ bên góc phải dưới
-    const Contact = ()=> {
-        return(
-            <div className={home.contact}>
-                <div className={home.contactContainerPhone}>
-                    <img className={home.contactImgPhone} src={imgPhone}/>
-                </div>
-                <div className={home.contactContainerMessage}>
-                    <img className={home.contactImgMessage} src={imgMessage}/>
-                </div>
             </div>
         )
     }
@@ -1245,3 +1230,4 @@ function Home() {
     )
 } 
 export default Home
+

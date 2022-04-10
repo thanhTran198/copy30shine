@@ -4,7 +4,7 @@ import Footer from './Footer'
 import { AiFillCaretDown, AiOutlineRight, AiFillStar, AiOutlineStar, AiOutlineArrowRight } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react"
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa'
-import Contact from './Home'
+import Contact from './Contact'
 
 import imgBannerSlider1 from "../asset/imgs/30shineShop/imgsSlider/bannerT0322-1.jpg"
 import imgBannerSlider2 from "../asset/imgs/30shineShop/imgsSlider/bannerT0322-2.jpg"

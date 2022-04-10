@@ -1,6 +1,6 @@
 import css from './experience.module.css';
 import Footer from './Footer'
-import Contact from './Home'
+import Contact from './Contact'
 
 import imgbannerCombo10 from '../asset/imgs/experience/20220104-30shine-banner-shine-combo.jpg'
 import imgCombo10Item1 from '../asset/imgs/experience/mat-na-sui-bot-tay-da-chet-3.jpg'

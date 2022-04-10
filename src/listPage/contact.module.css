@@ -1,0 +1,35 @@
+
+
+.contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+}
+.contactContainerPhone {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.contactContainerMessage {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+}
+.contactImgMessage {
+    padding-top: 8px;
+    height: 52px;
+    transform: translateX(20%);
+}
+.contactImgPhone {
+    height: 50px;
+    transform: translateX(-3%);
+    padding-top: 14px;
+}
