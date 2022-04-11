@@ -100,7 +100,7 @@ function HairStore() {
     const Products = (values) => {
         return(
             <a className={css.productsItem} href={values.href}>
-                <img className={css.productsItemImg} src={values.img}/>
+                <img className={css.productsItemImg} src={values.img} alt=""/>
                 <div className={css.productsItemDetail}>
                     <p className={css.productsItemName}>{values.nameProduct}</p>
                     <div className={css.productsItemPrices}>
@@ -293,8 +293,8 @@ function HairStore() {
 
         return(
             <div className={css.slider}>
-                <img ref={imgItem1} className={css.sliderImg1} src={imgBannerSlider1}/>
-                <img ref={imgItem2} className={css.sliderImg2} src={imgBannerSlider2}/>
+                <img ref={imgItem1} className={css.sliderImg1} src={imgBannerSlider1} alt=""/>
+                <img ref={imgItem2} className={css.sliderImg2} src={imgBannerSlider2} alt=""/>
                 <div className={css.iconSlider}>
                     <i onClick={()=>{handaleClickSlider("left")}} className={`${css.sliderIconLeft}`}><FaAngleLeft/></i>
                     <i onClick={()=>{handaleClickSlider("right")}} className={`${css.sliderIconRight}`}><FaAngleRight/></i>
@@ -309,53 +309,53 @@ function HairStore() {
                 <div className={css.commitService}>
                     <div className={css.commitServiceList}>
                         <a className={css.commitServiceItem} href="#">
-                            <img className={css.commitServiceImg} src={imgIconCommit1}/>
+                            <img className={css.commitServiceImg} src={imgIconCommit1} alt=""/>
                             <p className={css.commitServiceText}>Giao hàng siêu tốc</p>
                         </a>
                         <a className={css.commitServiceItem} href="#">
-                            <img className={css.commitServiceImg} src={imgIconCommit2}/>
+                            <img className={css.commitServiceImg} src={imgIconCommit2} alt=""/>
                             <p className={css.commitServiceText}>Hoàn tiền 120%</p>
                         </a>
                         <a className={css.commitServiceItem} href="#">
-                            <img className={css.commitServiceImg} src={imgIconCommit3}/>
+                            <img className={css.commitServiceImg} src={imgIconCommit3} alt=""/>
                             <p className={css.commitServiceText}>Đổi trả tân nơi</p>
                         </a>
                         <a className={css.commitServiceItem} href="#">
-                            <img className={css.commitServiceImg} src={imgIconCommit4}/>
+                            <img className={css.commitServiceImg} src={imgIconCommit4} alt=""/>
                             <p className={css.commitServiceText}>Cam kết 7 ngày hiệu quả</p>
                         </a>
                     </div>
                     <div className={css.commitProduct}>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit1}/>
+                            <img className={css.commitProductImg} src={imgCommit1} alt=""/>
                             <p className={css.commitProductText}>Sản phẩm mới</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit2}/>
+                            <img className={css.commitProductImg} src={imgCommit2} alt=""/>
                             <p className={css.commitProductText}>Sale sốc deal hời</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit3}/>
+                            <img className={css.commitProductImg} src={imgCommit3} alt=""/>
                             <p className={css.commitProductText}>Sản phẩm độc quyền</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit4}/>
+                            <img className={css.commitProductImg} src={imgCommit4} alt=""/>
                             <p className={css.commitProductText}>Nhanh hết mụn</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit5}/>
+                            <img className={css.commitProductImg} src={imgCommit5} alt=""/>
                             <p className={css.commitProductText}>Skin care</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit6}/>
+                            <img className={css.commitProductImg} src={imgCommit6} alt=""/>
                             <p className={css.commitProductText}>Muốn tóc đẹp</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit7}/>
+                            <img className={css.commitProductImg} src={imgCommit7} alt=""/>
                             <p className={css.commitProductText}>Thơm tho sạch sẽ</p>
                         </a>
                         <a className={css.commitProductLink} href="#">
-                            <img className={css.commitProductImg} src={imgCommit8}/>
+                            <img className={css.commitProductImg} src={imgCommit8} alt=""/>
                             <p className={css.commitProductText}>Râu care</p>
                         </a>
                     </div>
@@ -640,7 +640,7 @@ function HairStore() {
                         {listProductHighlights.map((product, index)=>{
                             return(
                                 <a key={index} className={css.productItem} href={product.href}>
-                                    <img className={css.productItemImg} src={product.img}/>
+                                    <img className={css.productItemImg} src={product.img} alt=""/>
                                     <div className={css.productItemDetail}>
                                         <p className={css.productItemName}>{product.nameProduct}</p>
                                         <div className={css.productItemPrices}>
@@ -663,12 +663,12 @@ function HairStore() {
                     <i ref={buttonClickRight} onClick={()=>{handleTransferProduct('right')}} className={`${css.listStoryIconRight}`}><FaAngleRight/></i>
                 </div>
                 <div className={css.comboHighlights}>
-                    <img className={css.comboHighlightsImg} src={imgHighlightCombos1}/>
-                    <img className={css.comboHighlightsImg} src={imgHighlightCombos2}/>
-                    <img className={css.comboHighlightsImg} src={imgHighlightCombos3}/>
-                    <img className={css.comboHighlightsImg} src={imgHighlightCombos4}/>
-                    <img className={css.comboHighlightsImg} src={imgHighlightCombos5}/>
-                    <img className={css.comboHighlightsImg} src={imgHighlightCombos6}/>
+                    <img className={css.comboHighlightsImg} src={imgHighlightCombos1} alt=""/>
+                    <img className={css.comboHighlightsImg} src={imgHighlightCombos2} alt=""/>
+                    <img className={css.comboHighlightsImg} src={imgHighlightCombos3} alt=""/>
+                    <img className={css.comboHighlightsImg} src={imgHighlightCombos4} alt=""/>
+                    <img className={css.comboHighlightsImg} src={imgHighlightCombos5} alt=""/>
+                    <img className={css.comboHighlightsImg} src={imgHighlightCombos6} alt=""/>
                 </div>
             </div>
         )
@@ -678,7 +678,7 @@ function HairStore() {
         return(
             <div className={css.productSuggestion}>
                 <div className={css.productSuggestionBanner}>
-                    <img className={css.productSuggestionBannerImg} src={imgProductSuggestionBanner}/>
+                    <img className={css.productSuggestionBannerImg} src={imgProductSuggestionBanner} alt=""/>
                     <div className={css.productSuggestionBannerText}>
                         <h3 className={css.productSuggestionBannerTextTitle}>GỢI Ý HÔM NAY MUA SẮM LIỀN TAY</h3>
                         <p className={css.productSuggestionBannerTextSubText}>Lựa Chọn Hàng Đầu Dành Cho Quý Khách</p>
@@ -883,13 +883,13 @@ function HairStore() {
                 <h2 className={css.trademarkTitle}>THƯƠNG HIỆU NỔI BẬT</h2>
                 <div className={css.trademarkContainer}>
                     <div ref={trademarkListImg} className={css.trademarkList}>
-                        <img className={css.trademarkItem} src={imgTrademark1}/>
-                        <img className={css.trademarkItem} src={imgTrademark2}/>
-                        <img className={css.trademarkItem} src={imgTrademark3}/>
-                        <img className={css.trademarkItem} src={imgTrademark4}/>
-                        <img className={css.trademarkItem} src={imgTrademark5}/>
-                        <img className={css.trademarkItem} src={imgTrademark6}/>
-                        <img className={css.trademarkItem} src={imgTrademark7}/>
+                        <img className={css.trademarkItem} src={imgTrademark1} alt=""/>
+                        <img className={css.trademarkItem} src={imgTrademark2} alt=""/>
+                        <img className={css.trademarkItem} src={imgTrademark3} alt=""/>
+                        <img className={css.trademarkItem} src={imgTrademark4} alt=""/>
+                        <img className={css.trademarkItem} src={imgTrademark5} alt=""/>
+                        <img className={css.trademarkItem} src={imgTrademark6} alt=""/>
+                        <img className={css.trademarkItem} src={imgTrademark7} alt=""/>
                     </div>
                     <i ref={buttonClickLeft} onClick={()=>{handleTransferProduct('left')}} className={`${css.trademarkIconLeft}`}><FaAngleLeft/></i>
                     <i ref={buttonClickRight} onClick={()=>{handleTransferProduct('right')}} className={`${css.trademarkIconRight}`}><FaAngleRight/></i>
@@ -904,35 +904,35 @@ function HairStore() {
                 <div className={css.listCommit}>
                     <div className={css.listCommitContainerItem}>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit1}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit1} alt=""/>
                             <span className={css.listCommitText}>Cam kết 7 ngày hiệu quả</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit2}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit2} alt=""/>
                             <span className={css.listCommitText}>Mua 1 hưởng 5 đặc quyền</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit3}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit3} alt=""/>
                             <span className={css.listCommitText}>Chính sách hoàn tiền 120%</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit4}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit4} alt=""/>
                             <span className={css.listCommitText}>Chất lượng sản phẩm cao cấp nhất</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit5}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit5} alt=""/>
                             <span className={css.listCommitText}>Giao hàng siêu tốc 2h</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit6}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit6} alt=""/>
                             <span className={css.listCommitText}>Đổi trả tận nơi trong 24h</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit7}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit7} alt=""/>
                             <span className={css.listCommitText}>Tổng đài tư vấn mọi lúc mọi nơi</span>
                         </div>
                         <div className={css.listCommitItem}>
-                            <img className={css.listCommitItemImg} src={imgListCommit8}/>
+                            <img className={css.listCommitItemImg} src={imgListCommit8} alt=""/>
                             <span className={css.listCommitText}>An toàn chuẩn giao vận quốc tế</span>
                         </div>
                     </div>

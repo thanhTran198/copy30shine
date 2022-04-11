@@ -215,19 +215,19 @@ function Home() {
             <div className={home.containerSlider}>
                 <div className={home.slider}>
                     <div ref={sliderItem1} className={`${home.sliderItem1}`}>
-                        <img className={`${home.sliderItemImg}`} src={`${sliderImg1}`}/>
+                        <img className={`${home.sliderItemImg}`} src={`${sliderImg1}`} alt=""/>
                     </div>
                     <div ref={sliderItem2} className={home.sliderItem2}>
-                        <img className={home.sliderItemImg} src={`${sliderImg2}`}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg2}`} alt=""/>
                     </div>
                     <div ref={sliderItem3} className={home.sliderItem3}>
-                        <img className={home.sliderItemImg} src={`${sliderImg3}`}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg3}`} alt=""/>
                     </div>
                     <div ref={sliderItem4} className={home.sliderItem4}>
-                        <img className={home.sliderItemImg} src={`${sliderImg4}`}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg4}`} alt=""/>
                     </div>
                     <div ref={sliderItem5} className={home.sliderItem5}>
-                        <img className={home.sliderItemImg} src={`${sliderImg5}`}/>
+                        <img className={home.sliderItemImg} src={`${sliderImg5}`} alt=""/>
                     </div>
                 </div>
                 <i onClick={()=>{handleTransferPhotos('right')}} className={`${home.listStoryIconLeft} ${home.sliderIconLeft}`}><FaAngleLeft/></i>
@@ -256,7 +256,7 @@ function Home() {
     const BackGroundImg = (value)=> {
         return(
             <div className={`${home.containerHoverZom} ${value.classContainerImg}`}>
-                <img className={`${home.hoverZom} ${value.classImg}`} src={value.img}/>
+                <img className={`${home.hoverZom} ${value.classImg}`} src={value.img} alt=""/>
             </div>
         )
     }
@@ -267,7 +267,7 @@ function Home() {
             <ul className={experiences.mgBt50 ? `${home.bodyList} ${home.mgBt50}`: `${home.bodyList}`}>
                     <li className={`${home.bodyItem}`}>
                         <div className={`${home.containerHoverZom} ${home.bodyItemContainerImg}`}>
-                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg1}/>
+                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg1} alt=""/>
                         </div>
                         <div className={home.bodyItemTitle}>
                             <h3 className={home.bodyItemService}>{experiences.itemService1}</h3>
@@ -276,7 +276,7 @@ function Home() {
                     </li>
                     <li className={home.bodyItem}>
                         <div className={`${home.containerHoverZom} ${home.bodyItemContainerImg}`}>
-                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg2}/>
+                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg2} alt=""/>
                         </div>
                         <div className={home.bodyItemTitle}>
                             <h3 className={home.bodyItemService}>{experiences.itemService2}</h3>
@@ -285,7 +285,7 @@ function Home() {
                     </li>
                     <li className={home.bodyItem}>
                         <div className={`${home.containerHoverZom} ${home.bodyItemContainerImg}`}>
-                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg3}/>
+                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg3} alt=""/>
                         </div>
                         <div className={home.bodyItemTitle}>
                             <h3 className={home.bodyItemService}>{experiences.itemService3}</h3>
@@ -294,7 +294,7 @@ function Home() {
                     </li>
                     <li className={home.bodyItem}>
                         <div className={`${home.containerHoverZom} ${home.bodyItemContainerImg}`}>
-                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg4}/>
+                            <img className={`${home.hoverZom} ${home.bodyItemImg}`} src={experiences.itemImg4} alt=""/>
                         </div>
                         <div className={home.bodyItemTitle}>
                             <h3 className={home.bodyItemService}>{experiences.itemService4}</h3>
@@ -315,7 +315,7 @@ function Home() {
                     noneMTop = {experiences.noneMTop ? true : false}
                 />
                 <div className={experiences.noZom ? `${home.bodyServiceContainerImg}` :`${home.bodyServiceContainerImg} ${home.containerHoverZom}`}>
-                    <img className={experiences.noZom ? `${home.bodyServiceImg}` :`${home.bodyServiceImg} ${home.hoverZom}`} src={experiences.imgMain}/>
+                    <img className={experiences.noZom ? `${home.bodyServiceImg}` :`${home.bodyServiceImg} ${home.hoverZom}`} src={experiences.imgMain} alt=""/>
                     <div className={experiences.storeIntroduction ? home.storeIntroduction : home.homeNone}>{experiences.storeIntroduction}</div>
                     <div className={experiences.twoLineImageTitle ? home.twoLineImageTitle : home.homeNone}>
                         <h2 className={home.twoLineImageTitleTagH2}>{experiences.twoLineImageTitleTagH2}</h2>
@@ -350,19 +350,19 @@ function Home() {
                 <ul className={home.listenList}>
                     <li className={home.listenItem}>
                         <div className={`${home.listenItemContainerImg} ${home.containerHoverZom}`}>
-                            <img className={`${home.listenItemImg} ${home.hoverZom}`} src={value.img1} />
+                            <img className={`${home.listenItemImg} ${home.hoverZom}`} src={value.img1}  alt=""/>
                         </div>
                         <p className={home.listenItemText}>{value.listenItemText1}</p>
                     </li>
                     <li className={home.listenItem}>
                         <div className={`${home.listenItemContainerImg} ${home.containerHoverZom}`}>
-                            <img className={`${home.listenItemImg} ${home.hoverZom}`} src={value.img2} />
+                            <img className={`${home.listenItemImg} ${home.hoverZom}`} src={value.img2}  alt=""/>
                         </div>
                         <p className={home.listenItemText}>{value.listenItemText2}</p>
                     </li>
                     <li className={home.listenItem}>
                         <div className={`${home.listenItemContainerImg} ${home.containerHoverZom}`}>
-                            <img className={`${home.listenItemImg} ${home.hoverZom}`} src={value.img3} />
+                            <img className={`${home.listenItemImg} ${home.hoverZom}`} src={value.img3}  alt=""/>
                         </div>
                         <p className={home.listenItemText}>{value.listenItemText3}</p>
                     </li>
@@ -417,25 +417,25 @@ function Home() {
                     <ul ref={JourneyShineList} className={home.listStory}>
                         <li className={home.listStoryItem}>
                             <div className={`${home.containerHoverZom} ${home.listStoryItemContainerImg}`}>
-                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney1}/>
+                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney1} alt=""/>
                             </div>
                             <p className={`${home.listenItemText} ${home.listStoryText}`}>Thay đổi ngoại hình, chàng trai lạnh lùng, ít nói khiến cô hoa khôi rung động</p>
                         </li>
                         <li className={home.listStoryItem}>
                             <div className={`${home.containerHoverZom} ${home.listStoryItemContainerImg}`}>
-                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney2}/>
+                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney2} alt=""/>
                             </div>
                             <p className={`${home.listenItemText} ${home.listStoryText}`}>Can đảm thay đổi mái tóc 7 năm, nam sinh Kiến Trúc lột xác kiểu tóc mới cực đẹp</p>
                         </li>
                         <li className={home.listStoryItem}>
                             <div className={`${home.containerHoverZom} ${home.listStoryItemContainerImg}`}>
-                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney3}/>
+                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney3} alt=""/>
                             </div>
                             <p className={`${home.listenItemText} ${home.listStoryText}`}>Bạn sinh viên IT lột xác thành hot boy vạn người mê</p>
                         </li>
                         <li className={home.listStoryItem}>
                             <div className={`${home.containerHoverZom} ${home.listStoryItemContainerImg}`}>
-                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney4}/>
+                                <img className={`${home.hoverZom} ${home.listStoryItemImg}`} src={imgShiningJourney4} alt=""/>
                             </div>
                             <p className={`${home.listenItemText} ${home.listStoryText}`}>Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới cực cuốn hút</p>
                         </li>
@@ -496,7 +496,7 @@ function Home() {
                     <ul ref={listAngels} className={home.angelsList}>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsTuAnh} />
+                                <img className={home.angelsItemImg} src={imgAngelsTuAnh} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Tú Anh - 255 Nguyễn An Ninh, Bình Dương</p>
@@ -505,7 +505,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsTraMy} />
+                                <img className={home.angelsItemImg} src={imgAngelsTraMy} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Trà My (Mina) - 152 Thống Nhất, Nha Trang</p>
@@ -514,7 +514,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsThanhHong} />
+                                <img className={home.angelsItemImg} src={imgAngelsThanhHong} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Thanh Hồng - 12 Lạc Trung, Hà Nội</p>
@@ -523,7 +523,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsKhanhHang} />
+                                <img className={home.angelsItemImg} src={imgAngelsKhanhHang} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Khánh Hằng - 152 Thống Nhất, Nha Trang</p>
@@ -532,7 +532,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsAiHien} />
+                                <img className={home.angelsItemImg} src={imgAngelsAiHien} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Ái Hiền - 113 Trần Hưng Đạo, An Giang</p>
@@ -541,7 +541,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsThuTrang} />
+                                <img className={home.angelsItemImg} src={imgAngelsThuTrang} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Thu Trang - 36 Phan Huy Ích, TP.HCM</p>
@@ -550,7 +550,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsDiemTuyen} />
+                                <img className={home.angelsItemImg} src={imgAngelsDiemTuyen} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Diểm Tuyền - 36 Phan Huy Ích, TP.HCM</p>
@@ -559,7 +559,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsMyDuyen} />
+                                <img className={home.angelsItemImg} src={imgAngelsMyDuyen} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Mỹ Duyên - 168 Đặng Văn Bi, TP.HCM</p>
@@ -568,7 +568,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsNhuY} />
+                                <img className={home.angelsItemImg} src={imgAngelsNhuY} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Như Ý - 168 Đặng Văn Bi, TP.HCM</p>
@@ -577,7 +577,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsNgocLien} />
+                                <img className={home.angelsItemImg} src={imgAngelsNgocLien} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Ngọc Liên - 1361 Phạm Văn Thuận, Biên Hòa</p>
@@ -586,7 +586,7 @@ function Home() {
                         </li>
                         <li className={home.angelsItem}>
                             <div className={home.angelsItemImgContainer}>
-                                <img className={home.angelsItemImg} src={imgAngelsTuyetTrinh} />
+                                <img className={home.angelsItemImg} src={imgAngelsTuyetTrinh} alt="" />
                             </div>
                             <div className={home.angelsDescription}>
                                 <p className={`${home.angelsDescriptionName} ${home.listenItemText}`}>Tuyết Trinh - 356 Đỗ Xuân Hợp, TP.HCM</p>
@@ -639,25 +639,25 @@ function Home() {
                     <ul ref={ulArtistList} className={home.artistList}>
                         <li className={home.artistListItem}>
                             <div className={home.artistListContainerImg}>
-                                <img className={home.artistListImg} src={imgArtistLeBaoBinh}/>
+                                <img className={home.artistListImg} src={imgArtistLeBaoBinh} alt=""/>
                             </div>
                             <p className={home.listenItemText}>Ca sĩ Lê Bảo Bình: Thay đổi để không phải “Bỏ lỡ một người”</p>
                         </li>
                         <li className={home.artistListItem}>
                             <div className={home.artistListContainerImg}>
-                                <img className={home.artistListImg} src={imgArtistLK}/>
+                                <img className={home.artistListImg} src={imgArtistLK} alt=""/>
                             </div>
                             <p className={home.listenItemText}>Kiểu tóc khiến LK Thoát ly chiếc mũ huyền thoại</p>
                         </li>
                         <li className={home.artistListItem}>
                             <div className={home.artistListContainerImg}>
-                                <img className={home.artistListImg} src={imgArtistHoanDung}/>
+                                <img className={home.artistListImg} src={imgArtistHoanDung} alt=""/>
                             </div>
                             <p className={home.listenItemText}>Hoàng Dũng: “Ngoại hình hết sức quan trọng, chỉ sau tài năng”</p>
                         </li>
                         <li className={home.artistListItem}>
                             <div className={home.artistListContainerImg}>
-                                <img className={home.artistListImg} src={imgArtistThanhSon}/>
+                                <img className={home.artistListImg} src={imgArtistThanhSon} alt=""/>
                             </div>
                             <p className={home.listenItemText}>Diễn viên Thanh Sơn “Cả Một Đời Ân Oán” tìm lại phong cách trẻ trung đúng tuổi thật</p>
                         </li>
@@ -686,7 +686,7 @@ function Home() {
                     <div className={home.newHairstyleList}>
                         <div className={home.newHairstyleItem}>
                             <div className={`${home.containerHoverZom} ${home.newHairstyleItemContainerImg}`}>
-                                <img className={`${home.newHairstyleItemImg} ${home.hoverZom}`} src={imgNewHairstyleStyle}/>
+                                <img className={`${home.newHairstyleItemImg} ${home.hoverZom}`} src={imgNewHairstyleStyle} alt=""/>
                             </div>
                             <div className={home.newHairstyleItemSub}>
                                 <p className={home.newHairstyleItemIitle}>Khám phá kiể tóc</p>
@@ -695,7 +695,7 @@ function Home() {
                         </div>
                         <div className={home.newHairstyleItem}>
                             <div className={`${home.containerHoverZom} ${home.newHairstyleItemContainerImg}`}>
-                                <img className={`${home.newHairstyleItemImg} ${home.hoverZom}`} src={imgNewHairstyleNew}/>
+                                <img className={`${home.newHairstyleItemImg} ${home.hoverZom}`} src={imgNewHairstyleNew} alt=""/>
                             </div>
                             <div className={home.newHairstyleItemSub}>
                                 <p className={home.newHairstyleItemIitle}>Style Master</p>
@@ -751,37 +751,37 @@ function Home() {
                     <ul ref={endowList} className={home.endow}>
                         <li className={`${home.endowItem}`}>
                             <div className={home.endowContainerImg}>
-                                <img className={home.endowImg} src={imgEndow1} />
+                                <img className={home.endowImg} src={imgEndow1} alt="" />
                             </div>
                             <p className={home.endowText}>Renewal Shine Box</p>
                         </li>
                         <li className={home.endowItem}>
                             <div className={home.endowContainerImg}>
-                                <img className={home.endowImg} src={imgEndow2} />
+                                <img className={home.endowImg} src={imgEndow2} alt="" />
                             </div>
                             <p className={home.endowText}>Balance Skin Shine Box</p>
                         </li>
                         <li className={home.endowItem}>
                             <div className={home.endowContainerImg}>
-                                <img className={home.endowImg} src={imgEndow3} />
+                                <img className={home.endowImg} src={imgEndow3} alt="" />
                             </div>
                             <p className={home.endowText}>Firming Shine Box </p>
                         </li>
                         <li className={home.endowItem}>
                             <div className={home.endowContainerImg}>
-                                <img className={home.endowImg} src={imgEndow4} />
+                                <img className={home.endowImg} src={imgEndow4} alt="" />
                             </div>
                             <p className={home.endowText}>Brightening Shine Box</p>
                         </li>
                         <li className={home.endowItem}>
                             <div className={home.endowContainerImg}>
-                                <img className={home.endowImg} src={imgEndow5} />
+                                <img className={home.endowImg} src={imgEndow5} alt="" />
                             </div>
                             <p className={home.endowText}>Smoothing Shine Box </p>
                         </li>
                         <li className={home.endowItem}>
                             <div className={home.endowContainerImg}>
-                                <img className={home.endowImg} src={imgEndow6} />
+                                <img className={home.endowImg} src={imgEndow6} alt="" />
                             </div>
                             <p className={home.endowText}>Shimmering Shine Box </p>
                         </li>
@@ -841,7 +841,7 @@ function Home() {
                 <div className={home.containerProductList}>
                     <ul ref={productListList} className={home.productList}>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct1}/>
+                            <img className={home.productItemImg} src={imgProduct1} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Sáp vuốt tóc Glanzen Fox</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>229.000₫</p>
@@ -863,7 +863,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct3}/>
+                            <img className={home.productItemImg} src={imgProduct3} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Máy sấy tóc Furin - Mạnh gấp 10 máy sấy bạn có</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>389.000₫</p>
@@ -875,7 +875,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct4}/>
+                            <img className={home.productItemImg} src={imgProduct4} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Máy sấy tóc tạo kiểu chuyên nghiệp Sharkway Limited 1600W</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>299.000₫</p>
@@ -887,7 +887,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct5}/>
+                            <img className={home.productItemImg} src={imgProduct5} alt=""/>
                             <p className={`${home.productItemName} ${home.endowText}`}>Sữa Rửa Mặt Tràm Trà Skin&Dr Tea tree - Khắc Tinh Của Mụn - Trị Mụn</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>219.000₫</p>
@@ -898,7 +898,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct6}/>
+                            <img className={home.productItemImg} src={imgProduct6} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Sáp Khử Mùi Old Spice</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>130.000₫</p>
@@ -909,7 +909,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct7}/>
+                            <img className={home.productItemImg} src={imgProduct7} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Mặt Nạ Thải Độc Carbon Dash Bubble</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>279.000₫</p>
@@ -921,7 +921,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct8}/>
+                            <img className={home.productItemImg} src={imgProduct8} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Sữa Rửa Mặt Thải Độc Dabo Hydration for men </p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>98.000₫</p>
@@ -945,7 +945,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct10}/>
+                            <img className={home.productItemImg} src={imgProduct10} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Sữa Rửa Mặt ACSYS Trị Mụn - Phiên Bản Đặc Biệt</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>289.000₫</p>
@@ -956,7 +956,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct11}/>
+                            <img className={home.productItemImg} src={imgProduct11} alt="" />
                             <p className={`${home.productItemName} ${home.endowText}`}>Sữa Rửa Mặt Skin&Dr Active Charcoal - Than Hoạt Tính 100g</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>179.000₫</p>
@@ -967,7 +967,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct12}/>
+                            <img className={home.productItemImg} src={imgProduct12} alt=""/>
                             <p className={`${home.productItemName} ${home.endowText}`}>Sáp vuốt tóc Glanzen Original Clay - Vô địch giữ nếp tới 12 giờ</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>229.000₫</p>
@@ -1028,52 +1028,52 @@ function Home() {
                 <ul ref={allMomentList} className={home.momentList}>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment1} />
+                            <img className={home.momentItemImg} src={imgShinrMoment1} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment2} />
+                            <img className={home.momentItemImg} src={imgShinrMoment2} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment3} />
+                            <img className={home.momentItemImg} src={imgShinrMoment3} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment4} />
+                            <img className={home.momentItemImg} src={imgShinrMoment4} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment5} />
+                            <img className={home.momentItemImg} src={imgShinrMoment5} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment6} />
+                            <img className={home.momentItemImg} src={imgShinrMoment6} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment7} />
+                            <img className={home.momentItemImg} src={imgShinrMoment7} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment8} />
+                            <img className={home.momentItemImg} src={imgShinrMoment8} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment9} />
+                            <img className={home.momentItemImg} src={imgShinrMoment9} alt="" />
                         </div>
                     </li>
                     <li className={home.momentItem}>
                         <div className={home.momentItemImgContainer}>
-                            <img className={home.momentItemImg} src={imgShinrMoment10} />
+                            <img className={home.momentItemImg} src={imgShinrMoment10} alt="" />
                         </div>
                     </li>
                 </ul>

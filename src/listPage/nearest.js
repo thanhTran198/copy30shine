@@ -30,7 +30,7 @@ function Nearest() {
     const Banner = ()=> {
         return(
             <div className={css.banner}>
-                <img className={css.bannerImg} src={imgBanner}/>
+                <img className={css.bannerImg} src={imgBanner} alt=""/>
                 <div className={css.bannerText}>
                     <h3 className={css.bannerTextTitle}>HỆ THỐNG SALON CỦA 30SHINE</h3>
                     <p className={css.bannerTextSub}>Tính đến hiện tại, chuỗi salon tóc nam 30Shine có 77 salon tại những vị trí đắc địa nhất Hà Nội, TP. Hồ Chí Minh và các tỉnh lân cận. Hãy tìm đến salon 30Shine gần anh nhất để tận hưởng trải nghiệm cắt tóc nam đỉnh cao!</p>
@@ -438,7 +438,7 @@ function Nearest() {
                 <div key={index} className={css.containerAddressShop}>
                     <div className={css.addressShop}>
                         <div className={css.addressAndImgShop}>
-                            <img className={css.imgAddressShop} src={address.img}/>
+                            <img className={css.imgAddressShop} src={address.img} alt=""/>
                             <p className={css.addressShopText}>{address.address1}</p>
                         </div>
                         <div className={css.buttonAddressShops}>
@@ -464,7 +464,7 @@ function Nearest() {
             return(
                 <div className={css.biggestSalon}>
                     <div className={css.biggestSalonItem}>
-                        <img className={css.biggestSalonItemImg} src={imgbiggestSalonQ12}/>
+                        <img className={css.biggestSalonItemImg} src={imgbiggestSalonQ12} alt=""/>
                         <p className={css.biggestSalonItemAddress}>56 Nguyễn Huy Tưởng, P. TX Trung, Q. Thanh Xuân, Hà Nội</p>
                         <div className={css.biggestSalonItemHotline}>
                             <span>HOTLINE: 1800.28.28.30</span>
@@ -472,7 +472,7 @@ function Nearest() {
                         </div>
                     </div>
                     <div className={css.biggestSalonItem}>
-                        <img className={css.biggestSalonItemImg} src={imgbiggestSalonThanhXuan}/>
+                        <img className={css.biggestSalonItemImg} src={imgbiggestSalonThanhXuan} alt=""/>
                         <p className={css.biggestSalonItemAddress}>76 Phan Văn Hớn, P. Tân Thới Nhất, Quận 12, TP Hồ Chí Minh</p>
                         <div className={css.biggestSalonItemHotline}>
                             <span>HOTLINE: 1800.28.28.30</span>
@@ -534,7 +534,7 @@ function Nearest() {
                                     return(
                                         <div key={indexlistSaLon} className={css.containerListSalonAndMapListSalon}>
                                             <div className={css.listSalonAndMapListSalon} >
-                                                <img className={css.listSalonAndMapImg} src={img30ShinePNG}/>
+                                                <img className={css.listSalonAndMapImg} src={img30ShinePNG} alt=""/>
                                                 <div className={css.listSalonAndMapText}>{listSalon.province}</div>
                                             </div>
                                         </div>

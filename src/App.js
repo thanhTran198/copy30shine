@@ -69,7 +69,7 @@ function App() {
             </li>
           </ul>
           <div onClick={()=>{handaleModalClos()}} className="login-btn">
-            <img className="login-btn-img" src={iconLogin}/>
+            <img className="login-btn-img" src={iconLogin} alt=""/>
             <p className="login-btn--text">ĐĂNG NHẬP</p>
           </div>
         </div>

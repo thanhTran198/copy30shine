@@ -35,16 +35,16 @@ function Experience() {
         return(
             <ul className={css.combo10List}>
                 <li className={`${css.combo10Item} ${css.containerHoverZom}`}>
-                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img1}/>
+                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img1} alt=""/>
                 </li>
                 <li className={`${css.combo10Item} ${css.containerHoverZom}`}>
-                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img2}/>
+                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img2} alt=""/>
                 </li>
                 <li className={`${css.combo10Item} ${css.containerHoverZom}`}>
-                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img3}/>
+                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img3} alt=""/>
                 </li>
                 <li className={`${css.combo10Item} ${css.containerHoverZom}`}>
-                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img4}/>
+                    <img className={`${css.combo10ItemImg} ${css.hoverZom}`} src={img.img4} alt=""/>
                 </li>
             </ul>
         )
@@ -58,7 +58,7 @@ function Experience() {
                 />
                 <div className={css.combo10Container}>
                     <div className={`${css.imgBannerCombo10Container} ${css.containerHoverZom}`}>
-                        <img className={`${css.imgBannerCombo10} ${css.hoverZom}`} src={imgbannerCombo10}/>
+                        <img className={`${css.imgBannerCombo10} ${css.hoverZom}`} alt="" src={imgbannerCombo10}/>
                     </div>
                     <p className={css.textCombo10}>Dịch vụ chăm sóc tóc đặc biệt dùng kèm Shine Combo</p>
                     <List4Item
@@ -79,7 +79,7 @@ function Experience() {
                     content = "VIP COMBO"
                 />
                 <div className={`${css.comboVipImgContainer} ${css.containerHoverZom}`}>
-                    <img className={`${css.ComboVipImg} ${css.hoverZom}`} src={imgComboVip}/>
+                    <img className={`${css.ComboVipImg} ${css.hoverZom}`} src={imgComboVip} alt=""/>
                 </div>
             </div>
         )
@@ -92,7 +92,7 @@ function Experience() {
                     content = "UỐN"
                 />
                 <div className={`${css.curlingImgContainer} ${css.containerHoverZom}`}>
-                    <img className={`${css.curlingImg} ${css.hoverZom}`} src={imgCurling}/>
+                    <img className={`${css.curlingImg} ${css.hoverZom}`} src={imgCurling} alt=""/>
                 </div>
             </div>
         )
@@ -106,13 +106,13 @@ function Experience() {
                 />
                 <ul className={`${css.dyeListImg}`}>
                     <li className={`${css.dyeListItem} ${css.containerHoverZom}`}>
-                        <img className={`${css.imgDye} ${css.hoverZom}`} src={imgDye1}/>
+                        <img className={`${css.imgDye} ${css.hoverZom}`} src={imgDye1} alt=""/>
                     </li>
                     <li className={`${css.dyeListItem} ${css.containerHoverZom}`}>
-                        <img className={`${css.imgDye} ${css.hoverZom}`} src={imgDye2}/>
+                        <img className={`${css.imgDye} ${css.hoverZom}`} src={imgDye2} alt=""/>
                     </li>
                     <li className={`${css.dyeListItem} ${css.containerHoverZom}`}>
-                        <img className={`${css.imgDye} ${css.hoverZom}`} src={imgDye3}/>
+                        <img className={`${css.imgDye} ${css.hoverZom}`} src={imgDye3} alt=""/>
                     </li>
                 </ul>
             </div>
@@ -127,10 +127,10 @@ function Experience() {
                 />
                 <div className={`${css.containerImgHariCare}`}>
                     <div className={`${css.containerHoverZom} ${css.containerHairCareImgMain}`}>
-                        <img className={`${css.hoverZom} ${css.HairCareImgMain}`} src={imgHairCare1}/>
+                        <img className={`${css.hoverZom} ${css.HairCareImgMain}`} alt="" src={imgHairCare1}/>
                     </div>
                     <div className={`${css.containerHoverZom} ${css.HairCareImgContainerSub}`}>
-                        <img className={`${css.hoverZom} ${css.HairCareImgSub}`} src={imgHairCare2}/>
+                        <img className={`${css.hoverZom} ${css.HairCareImgSub}`} alt="" src={imgHairCare2}/>
                     </div>
                 </div>
             </div>

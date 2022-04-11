@@ -70,7 +70,7 @@ function HairStyle() {
     const Image = (value) => {
         return(
             <a className={css.imageItem} href="#">
-                <img className={css.imageItemimg} src={value.img1}/>
+                <img className={css.imageItemimg} src={value.img1} alt=""/>
                 <div className={css.imageItemInteractive}>
                     <div className={css.imageItemIconHeart}>
                         <FaHeart/>

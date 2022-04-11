@@ -6,10 +6,10 @@ const Contact = ()=> {
     return(
         <div className={css.contact}>
             <div className={css.contactContainerPhone}>
-                <img className={css.contactImgPhone} src={imgPhone}/>
+                <img className={css.contactImgPhone} src={imgPhone} alt=""/>
             </div>
             <div className={css.contactContainerMessage}>
-                <img className={css.contactImgMessage} src={imgMessage}/>
+                <img className={css.contactImgMessage} src={imgMessage} alt=""/>
             </div>
         </div>
     )

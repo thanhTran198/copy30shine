@@ -29,14 +29,14 @@ function Shine() {
         return(
             <div className={css.littleStoryItem}>
                 <div className={css.LittleStoryContainerImg}>
-                    <img className={css.LittleStoryImg} src={value.img}/>
+                    <img className={css.LittleStoryImg} src={value.img} alt=""/>
                 </div>
                 <div className={css.LittleStoryContent}>
                     <h3 className={css.LittleStoryTextTitle}>{value.title}</h3>
                     <p className={css.LittleStorySubTextTitle}>{value.subTitle}</p>
                     <div className={css.LittleStoryWatch}>
                         <p className={css.LittleStoryView}>{value.view}</p>
-                        <img className={value.noneYoutube ? `${css.Dplaynone}` : `${css.LittleStoryIconYoutube}`} src={imgIconYoutube}/>
+                        <img className={value.noneYoutube ? `${css.Dplaynone}` : `${css.LittleStoryIconYoutube}`} src={imgIconYoutube} alt=""/>
                     </div>
                 </div>
             </div>
@@ -48,27 +48,27 @@ function Shine() {
             <div className={css.headingListPosts}>
                     <div className={css.headingListPostsItem}>
                         <div className={`${css.headingContainerImg}`}>
-                            <img className={`${css.headingImg}`} src={value.imgItem1}/>
+                            <img className={`${css.headingImg}`} src={value.imgItem1} alt=""/>
                         </div>
                         <div className={css.headingListPosts1Content}>
                             <h3 className={css.headingListPostsTitle}>{value.text1}</h3>
                             <p className={css.headingListPostsText}>{value.subText1}</p>
                             <div className={css.headingListPostsToWatch}>
                                 <p className={css.headingListPostsViews}>{value.viewItem1}</p>
-                                <img className={css.headingListPostsIconYoutube} src={imgIconYoutube}/>
+                                <img className={css.headingListPostsIconYoutube} src={imgIconYoutube} alt=""/>
                             </div>
                         </div>
                     </div>
                     <div className={css.headingListPostsItem}>
                         <div className={`${css.headingContainerImg}`}>
-                            <img className={`${css.headingImg}`} src={value.imgItem2}/>
+                            <img className={`${css.headingImg}`} src={value.imgItem2} alt=""/>
                         </div>
                         <div className={css.headingListPosts2Content}>
                             <h3 className={css.headingListPostsTitle}>{value.text2}</h3>
                             <p className={css.headingListPostsText}>{value.subText2}</p>
                             <div className={css.headingListPostsToWatch}>
                                 <p className={css.headingListPostsViews}>{value.viewItem2}</p>
-                                <img className={css.headingListPostsIconYoutube} src={imgIconYoutube}/>
+                                <img className={css.headingListPostsIconYoutube} src={imgIconYoutube} alt=""/>
                         </div>
                         </div>
                     </div>

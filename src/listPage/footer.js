@@ -23,14 +23,14 @@ const Footer = ()=> {
                         <li>Chính sách bảo mật thông tin</li>
                         <li>Liên hệ quảng cáo 30Shine</li>
                         <li className={footer.notificationGovernment}>
-                            <img className={footer.notificationGovernmentBCT} src={imgCongThuong}/>
-                            <img className={footer.notificationGovernmentDMCA} src={imgDMCA}/>
+                            <img className={footer.notificationGovernmentBCT} src={imgCongThuong} alt=""/>
+                            <img className={footer.notificationGovernmentDMCA} src={imgDMCA} alt=""/>
                         </li>
                         <li>
                             <p>Chấp nhận thanh toán</p>
                             <div className={footer.footerPayment}>
-                                <img className={footer.footerPaymentMasterCard} src={imgMasterCard}/>
-                                <img className={footer.footerPaymentVisa} src={imgVisa}/>
+                                <img className={footer.footerPaymentMasterCard} src={imgMasterCard} alt=""/>
+                                <img className={footer.footerPaymentVisa} src={imgVisa} alt=""/>
                             </div>
                         </li>
 
@@ -53,8 +53,8 @@ const Footer = ()=> {
                             <h3 className={footer.footerItemH3}>THAM GIA CỘNG ĐỒNG</h3>
                             <li>Cùng 2.5tr thành viên 30Shine</li>
                             <li className={footer.SocialNetwork}>
-                                <img className={footer.SocialNetworkTiktok} src={imgTiktok} />
-                                <img className={footer.SocialNetworkYoutube} src={imgYoutube} />
+                                <img className={footer.SocialNetworkTiktok} src={imgTiktok}  alt=""/>
+                                <img className={footer.SocialNetworkYoutube} src={imgYoutube}  alt=""/>
                             </li>
                         </ul>
                     </div>
