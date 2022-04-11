@@ -46,7 +46,6 @@ function Nearest() {
         const chooseDistrict = useRef()
         const containerChooseProvince = useRef()
         const chooseDistrictList = useRef()
-        let indexCityProvince = useRef('alo')
 
         const listSalons30Shine = [
             {
@@ -431,6 +430,7 @@ function Nearest() {
             chooseProvince.current.innerText = e.target.innerText
             containerChooseProvince.current.style= "display: none;"
             setIdProvince(e.target.id)
+            console.log(e.target.id)
         }
 
         function handaleAddressSearch(address,index) {
@@ -511,10 +511,12 @@ function Nearest() {
                                 <p ref={chooseDistrict} className={css.chooseDistrictText}>Quận huyện</p>
                                 <AiOutlineDown/>
                             </div>
+
+                            {/* danh sách quận huyện */}
                             <div ref={chooseDistrictList} className={css.chooseDistrictLists}>
                                 {listSalons30Shine.map((listSalon, index)=>{
                                     if(index === idProvince) {
-                                        indexCityProvince = idProvince
+                                        console.log(listSalon);
                                         return(
                                             listSalon.ListSalonOfProvince.map((district,index)=>{
                                                 return(
@@ -528,9 +530,12 @@ function Nearest() {
                         </div>
                     </div>
                     <div className={css.listSalonAndMap}>
+
+                        {/* danh sách các tỉnh có salon 30shine */}
                         <div className={css.listSalonShow}>
                             {listSalons30Shine.map((listSalon, indexlistSaLon)=>{
                                 if(idProvince === '') {
+                                    // nếu người dùng chưa chọn tỉnh thành thì return ra các tỉnh có salon 30shine
                                     return(
                                         <div key={indexlistSaLon} className={css.containerListSalonAndMapListSalon}>
                                             <div className={css.listSalonAndMapListSalon} >
@@ -540,9 +545,11 @@ function Nearest() {
                                         </div>
                                     )
                                 }else{
+                                    // nếu chọn tỉnh thành thì return ra các salon trong tỉnh thành đó
+                                    
                                     return(
                                         listSalon.ListSalonOfProvince.map((address,index)=>{
-                                            if(indexlistSaLon === indexCityProvince) {
+                                            if(indexlistSaLon == idProvince) {
                                                 return(
                                                     handaleAddressSearch(address,index)
                                                 )
@@ -553,8 +560,7 @@ function Nearest() {
                             })}
                         </div>
                         <div className={css.mapSalon}>
-                            {idProvince === '' ? biggestSalon() : <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122677.52687640213!2d108.1429067062988!3d16.082464683637802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649267829971!5m2!1svi!2s" width="656" height="674" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame"></iframe>}
-                            
+                            {idProvince === '' ? biggestSalon() : <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122677.52687640213!2d108.1429067062988!3d16.082464683637802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649267829971!5m2!1svi!2s" width="656" height="674" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="myFrame"></iframe>}
                         </div>
                     </div>
                 </div>
