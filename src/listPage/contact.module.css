@@ -34,6 +34,6 @@
     padding-top: 14px;
 }
 
-.contactContainerPhone:hover, .contactContainerMessage:hover {
+.contactContainerPhone:active, .contactContainerMessage:active {
     opacity: 0.8;
 }

@@ -1,4 +1,4 @@
-import shop from './shop.module.css';
+// import shop from './shop.module.css';
 import Footer from './Footer'
 import css from './shine.module.css'
 import Contact from './Contact'

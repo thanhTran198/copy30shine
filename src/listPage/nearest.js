@@ -1,4 +1,4 @@
-import shop from './shop.module.css';
+// import shop from './shop.module.css';
 import Footer from './Footer'
 import Contact from './Contact'
 import css from './nearest.module.css'
@@ -513,7 +513,7 @@ function Nearest() {
                             </div>
                             <div ref={chooseDistrictList} className={css.chooseDistrictLists}>
                                 {listSalons30Shine.map((listSalon, index)=>{
-                                    if(index == idProvince) {
+                                    if(index === idProvince) {
                                         indexCityProvince = idProvince
                                         return(
                                             listSalon.ListSalonOfProvince.map((district,index)=>{
@@ -542,7 +542,7 @@ function Nearest() {
                                 }else{
                                     return(
                                         listSalon.ListSalonOfProvince.map((address,index)=>{
-                                            if(indexlistSaLon == indexCityProvince) {
+                                            if(indexlistSaLon === indexCityProvince) {
                                                 return(
                                                     handaleAddressSearch(address,index)
                                                 )
@@ -553,7 +553,7 @@ function Nearest() {
                             })}
                         </div>
                         <div className={css.mapSalon}>
-                            {idProvince === '' ? biggestSalon() : <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122677.52687640213!2d108.1429067062988!3d16.082464683637802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649267829971!5m2!1svi!2s" width="656" height="674" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
+                            {idProvince === '' ? biggestSalon() : <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122677.52687640213!2d108.1429067062988!3d16.082464683637802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649267829971!5m2!1svi!2s" width="656" height="674" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame"></iframe>}
                             
                         </div>
                     </div>

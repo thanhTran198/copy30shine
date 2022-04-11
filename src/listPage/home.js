@@ -3,7 +3,6 @@ import { FaAngleRight, FaAngleLeft, FaArrowRight } from 'react-icons/fa'
 import Footer from './Footer'
 import Contact from './Contact'
 
-import shop from './shop.module.css';
 import home from './home.module.css';
 import sliderImg1 from '../asset/imgs/home/sliderImg1.jpg'
 import sliderImg2 from '../asset/imgs/home/sliderImg2.jpg'
@@ -188,7 +187,8 @@ function Home() {
             }
         }
         
-        let setTimeSlider = useRef()
+        // let setTimeSlider = useRef()
+        let setTimeSlider
 
 
         // sét translateX cho img
@@ -608,7 +608,7 @@ function Home() {
         const iconOfArtistListRight = useRef()
 
         function handaleClickArtist(value) {
-            if(value = 'left'){
+            if(value === 'left'){
                 if(valueTransformArtist === 0) {
                     iconOfArtistListLeft.current.style.cursor = 'no-drop'
                 }else{
@@ -716,7 +716,7 @@ function Home() {
 
         // 29%
         function handleClickEndow(value) {
-            if(value = 'left') {
+            if(value === 'left') {
                 if(valueTransformEndow <=0) {
                 }else{
                     setvalueTransformEndow(valueTransformEndow - 29)
@@ -852,7 +852,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct2}/>
+                            <img className={home.productItemImg} src={imgProduct2} alt=""/>
                             <p className={`${home.productItemName} ${home.endowText}`}>Gôm Xịt Tóc Lady Killer - Thách thức nón bảo hiểm</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>150.000₫</p>
@@ -933,7 +933,7 @@ function Home() {
                             </div>
                         </li>
                         <li className={home.productItem}>
-                            <img className={home.productItemImg} src={imgProduct9}/>
+                            <img className={home.productItemImg} src={imgProduct9} alt=""/>
                             <p className={`${home.productItemName} ${home.endowText}`}>Serum Dưỡng Da Dabo 7in1 Black Force - Làm đẹp dễ dàng với 7 bước dưỡng da trong 1 sản phẩm</p>
                             <div className={home.productItemPriceContainer}>
                                 <p className={home.productItemPrice}>345.000₫</p>

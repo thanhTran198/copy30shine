@@ -235,7 +235,8 @@ function HairStore() {
         const [imgActive, setImgActive] = useState(1)
         const imgItem1 = useRef()
         const imgItem2 = useRef()
-        let setTimeSlider = useRef()
+        // let setTimeSlider = useRef()
+        let setTimeSlider
 
         function setImgSlider() {
             if(imgActive === 1) {

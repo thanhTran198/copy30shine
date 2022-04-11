@@ -45,8 +45,8 @@ const Footer = ()=> {
                             <h3 className={footer.footerItemH3}>TẢI ỨNG DỤNG CỦA 30SHINE</h3>
                             <li>Trải nghiệm đặt lịch nhanh chóng và nhiều tiện ích khác với ứng dụng 30Shine.</li>
                             <li className={footer.getTheAppIcon}>
-                                <img src={imgAppStore}/>
-                                <img src={imgGooglePlay}/>
+                                <img src={imgAppStore} alt=""/>
+                                <img src={imgGooglePlay} alt=""/>
                             </li>
                         </ul>
                         <ul className={footer.community}>
