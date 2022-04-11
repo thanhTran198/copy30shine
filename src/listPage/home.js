@@ -199,11 +199,11 @@ function Home() {
        },[srcSlider])
         
        const handleTransferPhotos = (command) => {
-            if(command == 'right') {
+            if(command === 'right') {
                 clearTimeout(setTimeSlider)
                 setSrcSlider(srcSlider + 1)
                 handleSlider()
-            }else if(command == 'left') {
+            }else if(command === 'left') {
                 clearTimeout(setTimeSlider)
                 setSrcSlider(srcSlider - 1)
                 handleSlider()
@@ -244,10 +244,10 @@ function Home() {
                     <h3 className={home.bodyTitleFirstTitle}>{introTitle.textTitle}</h3>
                     <p className={home.bodyTitleFirstSubtitle}>{introTitle.subTextTitle}</p>
                 </div>
-                <a href="#" className={introTitle.textAll ? home.bodyTitleAll : home.homeNone}>
+                <div className={introTitle.textAll ? home.bodyTitleAll : home.homeNone}>
                     <p className={home.bodyTitleAllText}>{introTitle.textAll}</p>
                     <i className={home.bodyTitleAllIcon}><FaAngleRight/></i>
-                </a>
+                </div>
             </div>
         )
     }
@@ -379,7 +379,7 @@ function Home() {
         const JourneyShineList = useRef()
 
         function handaleClickShiningJourney(value) {
-            if(value == "left") {
+            if(value === "left") {
                 if(valuetransform <= 0) {
                     iconJourneyShineLeft.current.style.cursor = 'no-drop'
                 }else{
@@ -398,7 +398,7 @@ function Home() {
         }
 
         useEffect(()=>{
-            if(valuetransform == 0) {
+            if(valuetransform === 0) {
                 iconJourneyShineLeft.current.style.cursor = 'no-drop'
             }else{
                 iconJourneyShineLeft.current.style.cursor = 'pointer'
@@ -455,7 +455,7 @@ function Home() {
         
 
         function handleTransferPhotosAngels(button) {
-            if(button == 'up') {
+            if(button === 'up') {
                 if(transform < 0) {
                 }else {
                     setTransfrom(transform + 30)
@@ -608,8 +608,8 @@ function Home() {
         const iconOfArtistListRight = useRef()
 
         function handaleClickArtist(value) {
-            if(value == 'left'){
-                if(valueTransformArtist == 0) {
+            if(value = 'left'){
+                if(valueTransformArtist === 0) {
                     iconOfArtistListLeft.current.style.cursor = 'no-drop'
                 }else{
                     setValueTransformArtist(valueTransformArtist - 51)
@@ -716,12 +716,12 @@ function Home() {
 
         // 29%
         function handleClickEndow(value) {
-            if(value == 'left') {
+            if(value = 'left') {
                 if(valueTransformEndow <=0) {
                 }else{
                     setvalueTransformEndow(valueTransformEndow - 29)
                 }
-            }else if(value == 'right'){
+            }else if(value === 'right'){
                 console.log(valueTransformEndow)
                 if(valueTransformEndow >= 87) {
                     iconEndowRight.current.style.cursor = 'no-drop'
@@ -800,7 +800,7 @@ function Home() {
         const productListIconRight = useRef()
         // 23%
         function handaleClickShop(value){
-            if(value == 'left'){
+            if(value === 'left'){
                 if(valueTransformShop <= 0){
 
                 }else{
@@ -992,7 +992,7 @@ function Home() {
         const iconMomentListRight = useRef()
 
         function handaleMomentClick(value) {
-            if(value == 'left'){
+            if(value === 'left'){
                 if(valueTransformMoment <= 0){
 
                 }else{

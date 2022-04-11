@@ -530,7 +530,7 @@ function Nearest() {
                     <div className={css.listSalonAndMap}>
                         <div className={css.listSalonShow}>
                             {listSalons30Shine.map((listSalon, indexlistSaLon)=>{
-                                if(idProvince == '') {
+                                if(idProvince === '') {
                                     return(
                                         <div key={indexlistSaLon} className={css.containerListSalonAndMapListSalon}>
                                             <div className={css.listSalonAndMapListSalon} >
@@ -553,7 +553,7 @@ function Nearest() {
                             })}
                         </div>
                         <div className={css.mapSalon}>
-                            {idProvince == '' ? biggestSalon() : <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122677.52687640213!2d108.1429067062988!3d16.082464683637802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649267829971!5m2!1svi!2s" width="656" height="674" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
+                            {idProvince === '' ? biggestSalon() : <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122677.52687640213!2d108.1429067062988!3d16.082464683637802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649267829971!5m2!1svi!2s" width="656" height="674" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
                             
                         </div>
                     </div>

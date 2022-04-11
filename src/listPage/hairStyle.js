@@ -69,7 +69,7 @@ function HairStyle() {
 
     const Image = (value) => {
         return(
-            <a className={css.imageItem} href="#">
+            <div className={css.imageItem}>
                 <img className={css.imageItemimg} src={value.img1} alt=""/>
                 <div className={css.imageItemInteractive}>
                     <div className={css.imageItemIconHeart}>
@@ -80,7 +80,7 @@ function HairStyle() {
                     </div>
                 </div>
                 <h4 className={css.imageItemText}>{value.text}</h4>
-            </a>
+            </div>
         )
     }
 

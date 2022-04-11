@@ -99,7 +99,7 @@ function HairStore() {
 
     const Products = (values) => {
         return(
-            <a className={css.productsItem} href={values.href}>
+            <div className={css.productsItem}>
                 <img className={css.productsItemImg} src={values.img} alt=""/>
                 <div className={css.productsItemDetail}>
                     <p className={css.productsItemName}>{values.nameProduct}</p>
@@ -107,15 +107,15 @@ function HairStore() {
                         <span className={css.productsItemPrice}>{values.price}₫</span>
                         {values.oldPrice ? <span className={css.productsItemOldPrice}>{values.oldPrice}₫</span> : ''}
                     </div>
-                    {values.star == 0 ? <div className={css.productsItemStar}><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                    {values.star == 1 ? <div className={css.productsItemStar}><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                    {values.star == 2 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                    {values.star == 3 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                    {values.star == 4 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/></div> : ''}
-                    {values.star == 5 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div> : ''}
+                    {values.star === 0 ? <div className={css.productsItemStar}><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                    {values.star === 1 ? <div className={css.productsItemStar}><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                    {values.star === 2 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                    {values.star === 3 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                    {values.star === 4 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/></div> : ''}
+                    {values.star === 5 ? <div className={css.productsItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div> : ''}
                 </div>
                 {values.oldPrice ? <span className={css.saleLabel}><p className={css.saleLabelSale}>{(((values.price / values.oldPrice) * 100) - 100).toFixed(0) }%</p></span> : ''}
-            </a>
+            </div>
         )
     }
 
@@ -238,7 +238,7 @@ function HairStore() {
         let setTimeSlider = useRef()
 
         function setImgSlider() {
-            if(imgActive == 1) {
+            if(imgActive === 1) {
                 imgItem1.current.classList.add(`${css.imgMinus100}`)
                 imgItem2.current.classList.add(`${css.imgMinus100}`)
                 imgItem2.current.classList.add(`${css.zIndex2}`)
@@ -250,7 +250,7 @@ function HairStore() {
                 },250)
 
                 setImgActive(2)
-            }else if(imgActive == 2) {
+            }else if(imgActive === 2) {
                 imgItem2.current.classList.remove(`${css.zIndex2}`)
                 imgItem1.current.classList.remove(`${css.zIndex1}`)
                 imgItem1.current.classList.remove(`${css.img100}`)
@@ -280,7 +280,7 @@ function HairStore() {
         function handaleClickSlider(value) {
             clearTimeout(setTimeSlider)
             if(value) {
-                if(imgActive == 1){
+                if(imgActive === 1){
                     setImgActive(2)
                     setImgSlider()
                 }else{
@@ -308,56 +308,56 @@ function HairStore() {
             <div className={css.commit}>
                 <div className={css.commitService}>
                     <div className={css.commitServiceList}>
-                        <a className={css.commitServiceItem} href="#">
+                        <div className={css.commitServiceItem}>
                             <img className={css.commitServiceImg} src={imgIconCommit1} alt=""/>
                             <p className={css.commitServiceText}>Giao hàng siêu tốc</p>
-                        </a>
-                        <a className={css.commitServiceItem} href="#">
+                        </div>
+                        <div className={css.commitServiceItem}>
                             <img className={css.commitServiceImg} src={imgIconCommit2} alt=""/>
                             <p className={css.commitServiceText}>Hoàn tiền 120%</p>
-                        </a>
-                        <a className={css.commitServiceItem} href="#">
+                        </div>
+                        <div className={css.commitServiceItem}>
                             <img className={css.commitServiceImg} src={imgIconCommit3} alt=""/>
                             <p className={css.commitServiceText}>Đổi trả tân nơi</p>
-                        </a>
-                        <a className={css.commitServiceItem} href="#">
+                        </div>
+                        <div className={css.commitServiceItem}>
                             <img className={css.commitServiceImg} src={imgIconCommit4} alt=""/>
                             <p className={css.commitServiceText}>Cam kết 7 ngày hiệu quả</p>
-                        </a>
+                        </div>
                     </div>
                     <div className={css.commitProduct}>
-                        <a className={css.commitProductLink} href="#">
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit1} alt=""/>
                             <p className={css.commitProductText}>Sản phẩm mới</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit2} alt=""/>
                             <p className={css.commitProductText}>Sale sốc deal hời</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit3} alt=""/>
                             <p className={css.commitProductText}>Sản phẩm độc quyền</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit4} alt=""/>
                             <p className={css.commitProductText}>Nhanh hết mụn</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit5} alt=""/>
                             <p className={css.commitProductText}>Skin care</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit6} alt=""/>
                             <p className={css.commitProductText}>Muốn tóc đẹp</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit7} alt=""/>
                             <p className={css.commitProductText}>Thơm tho sạch sẽ</p>
-                        </a>
-                        <a className={css.commitProductLink} href="#">
+                        </div>
+                        <div className={css.commitProductLink}>
                             <img className={css.commitProductImg} src={imgCommit8} alt=""/>
                             <p className={css.commitProductText}>Râu care</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -369,7 +369,6 @@ function HairStore() {
     const listProductHighlights = [
         {
             nameProduct: "Máy sấy tóc Flyco FH6277VN 1800w ION",
-            href: "#",
             img: imgProductHighlights1,
             price: "399.000",
             oldPrice: "459.000",
@@ -377,7 +376,6 @@ function HairStore() {
         },
         {
             nameProduct: "Máy sấy tóc Flyco FH1610VN 2200W",
-            href: "#",
             img: imgProductHighlights2,
             price: "359.000",
             oldPrice: "399.000",
@@ -385,49 +383,42 @@ function HairStore() {
         },
         {
             nameProduct: "Sáp Khử Mùi Old Spice",
-            href: "#",
             img: imgProductHighlights3,
             price: "130.000",
             star: "0"
         },
         {
             nameProduct: "Lăn Khử Mùi Etiaxil Đặc Trị - Nói Không Với Hôi Nách",
-            href: "#",
             img: imgProductHighlights4,
             price: "293.000",
             star: "0"
         },
         {
             nameProduct: "Lăn Khử Mùi Hàng Ngày Etiaxil - Trị Hôi Nách Hiệu Quả Tạm Biệt Mùi Hôi",
-            href: "#",
             img: imgProductHighlights5,
             price: "237.000",
             star: "3"
         },
         {
             nameProduct: "Lăn Khử Mùi Hàng Ngày Etiaxil - Trị Hôi Nách Hiệu Quả Tạm Biệt Mùi Hôi",
-            href: "#",
             img: imgProductHighlights6,
             price: "237.000",
             star: "0"
         },
         {
             nameProduct: "Sữa Dưỡng Da Grinif All In One cho Nam - Trắng Mịn Da",
-            href: "#",
             img: imgProductHighlights7,
             price: "359.000",
             star: "5"
         },
         {
             nameProduct: "Viên Sủi Giảm Stress Dr. Frei Magnesium + B Complex",
-            href: "#",
             img: imgProductHighlights8,
             price: "149.000",
             star: "0"
         },
         {
             nameProduct: "Máy rửa mặt Halio Facial Cleansing & Massaging Device - Mustard",
-            href: "#",
             img: imgProductHighlights9,
             price: "559.000",
             oldPrice: "849.000",
@@ -435,7 +426,6 @@ function HairStore() {
         },
         {
             nameProduct: "Máy rửa mặt Halio Facial Cleansing & Massaging Device - Sky Blue",
-            href: "#",
             img: imgProductHighlights10,
             price: "559.000",
             oldPrice: "859.000",
@@ -443,7 +433,6 @@ function HairStore() {
         },
         {
             nameProduct: "Gel rửa mặt Simple Refreshing Facial Wash ",
-            href: "#",
             img: imgProductHighlights11,
             price: "89.000",
             oldPrice: "150.000",
@@ -451,7 +440,6 @@ function HairStore() {
         },
         {
             nameProduct: "Toner làm dịu da nhạy cảm Simple Soothing Facial Toner",
-            href: "#",
             img: imgProductHighlights12,
             price: "92.000",
             oldPrice: "150.000",
@@ -459,7 +447,6 @@ function HairStore() {
         },
         {
             nameProduct: "Dung Dịch Dưỡng Trắng Hada Labo Perfect White Supreme Lotion",
-            href: "#",
             img: imgProductHighlights13,
             price: "220.000",
             oldPrice: "225.000",
@@ -467,35 +454,30 @@ function HairStore() {
         },
         {
             nameProduct: "Kem Rửa Mặt Làm Sạch Sâu Oxy Deep Wash Cream Formula",
-            href: "#",
             img: imgProductHighlights14,
             price: "72.000",
             star: "0"
         },
         {
             nameProduct: "Serum Mờ Thâm Kháng Viêm Và Ngừa Mụn G.G.G Wonder Glow Healing Serum",
-            href: "#",
             img: imgProductHighlights15,
             price: "220.000 ₫ - 476.000",
             star: "0"
         },
         {
             nameProduct: "Serum Dưỡng Sáng Và Cấp Nước G.G.G Wonder Glow Brightening Serum",
-            href: "#",
             img: imgProductHighlights16,
             price: "220.000 ₫ - 595.000",
             star: "0"
         },
         {
             nameProduct: "Dầu Gội Trị Rụng Và Kích Thích Mọc Tóc Dr.FORHAIR Folligen Plus ",
-            href: "#",
             img: imgProductHighlights17,
             price: "205.000 ₫ - 605.000₫",
             star: "0"
         },
         {
             nameProduct: "Sữa Rửa Mặt Thải Độc Dabo Hydration for men ",
-            href: "#",
             img: imgProductHighlights18,
             price: "89.000",
             oldPrice: "115.000",
@@ -503,49 +485,42 @@ function HairStore() {
         },
         {
             nameProduct: "Set Dầu Gội Và Dầu Xả Hairburst",
-            href: "#",
             img: imgProductHighlights19,
             price: "646.000",
             star: "5"
         },
         {
             nameProduct: "Gôm Xịt Tóc Lady Killer - Thách thức nón bảo hiểm",
-            href: "#",
             img: imgProductHighlights20,
             price: "150.000",
             star: "5"
         },
         {
             nameProduct: "Sữa Rửa Mặt Skin&Dr Active Charcoal - Than Hoạt Tính 100g",
-            href: "#",
             img: imgProductHighlights21,
             price: "179.000",
             star: "4"
         },
         {
             nameProduct: "Gel Đặc Trị Mụn Acsys Spot Gel Patch",
-            href: "#",
             img: imgProductHighlights22,
             price: "399.000",
             star: "5"
         },
         {
             nameProduct: "Gel Tẩy Tế Bào Chết Acsys Peeling Gel",
-            href: "#",
             img: imgProductHighlights23,
             price: "350.000",
             star: "5"
         },
         {
             nameProduct: "Sữa Rửa Mặt ACSYS Trị Mụn - Phiên Bản Đặc Biệt",
-            href: "#",
             img: imgProductHighlights24,
             price: "289.000",
             star: "4"
         },
         {
             nameProduct: "Miếng Dán Trị Mụn SNP ACSYS Spot Trouble Patch",
-            href: "#",
             img: imgProductHighlights25,
             price: "91.800",
             oldPrice: "102.000",
@@ -553,35 +528,30 @@ function HairStore() {
         },
         {
             nameProduct: "Sáp vuốt tóc Glanzen Fox",
-            href: "#",
             img: imgProductHighlights26,
             price: "229.000",
             star: "5"
         },
         {
             nameProduct: "Glanzen Prime - Floral | Phiên Đặc Biệt Hương Hoa",
-            href: "#",
             img: imgProductHighlights27,
             price: "329.000",
             star: "5"
         },
         {
             nameProduct: "Sáp vuốt tóc Glanzen Original Clay - Vô địch giữ nếp tới 12 giờ",
-            href: "#",
             img: imgProductHighlights28,
             price: "299.000 ₫ - 500.000",
             star: "0"
         },
         {
             nameProduct: "Glanzen Prime - Sandar Wood | Phiên Bản Đặc Biệt Hương Gỗ",
-            href: "#",
             img: imgProductHighlights29,
             price: "329.000",
             star: "0"
         },
         {
             nameProduct: "Máy sấy tóc tạo kiểu chuyên nghiệp Sharkway Limited 1600W",
-            href: "#",
             img: imgProductHighlights30,
             price: "237.000",
             oldPrice: "350.000",
@@ -596,7 +566,7 @@ function HairStore() {
         const buttonClickLeft = useRef()
 
         function handleTransferProduct(value) {
-            if(value == 'left') {
+            if(value === 'left') {
                 if(product >= -10) {
                     buttonClickLeft.current.style.cursor = 'no-drop'
                 }else {
@@ -604,7 +574,7 @@ function HairStore() {
                     buttonClickLeft.current.style.cursor = 'pointer'
                     buttonClickRight.current.style.cursor = 'pointer'
                 }
-            }else if(value == 'right'){
+            }else if(value === 'right'){
                 if(product <= -500) {
                     buttonClickRight.current.style.cursor = 'no-drop'
                     buttonClickLeft.current.style.cursor = 'pointer'
@@ -629,17 +599,17 @@ function HairStore() {
                 <div className={css.highlights}>
                     <div className={css.highlightsTitle}>
                         <h2 className={css.highlightsTitleText}>TOP SẢN PHẨM NỔI BẬT</h2>
-                        <a className={css.highlightsTitleAllProduct} href="#">
+                        <div className={css.highlightsTitleAllProduct}>
                             <p className={css.highlightsTitleAllProductText}>Xem tất cả</p>
                             <AiOutlineRight/>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div className={css.highlightsContainerListProduct}>
                     <div ref={listProduct} className={css.highlightsListProduct}>
                         {listProductHighlights.map((product, index)=>{
                             return(
-                                <a key={index} className={css.productItem} href={product.href}>
+                                <div key={index} className={css.productItem}> {/* // href={product.href} */}
                                     <img className={css.productItemImg} src={product.img} alt=""/>
                                     <div className={css.productItemDetail}>
                                         <p className={css.productItemName}>{product.nameProduct}</p>
@@ -647,15 +617,15 @@ function HairStore() {
                                             <span className={css.productItemPrice}>{product.price}₫</span>
                                             {product.oldPrice ? <span className={css.productItemOldPrice}>{product.oldPrice}₫</span> : ''}
                                         </div>
-                                        {product.star == 0 ? <div className={css.productItemStar}><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                                        {product.star == 1 ? <div className={css.productItemStar}><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                                        {product.star == 2 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                                        {product.star == 3 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
-                                        {product.star == 4 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/></div> : ''}
-                                        {product.star == 5 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div> : ''}
+                                        {product.star === 0 ? <div className={css.productItemStar}><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                                        {product.star === 1 ? <div className={css.productItemStar}><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                                        {product.star === 2 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                                        {product.star === 3 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/><AiOutlineStar/></div> : ''}
+                                        {product.star === 4 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiOutlineStar/></div> : ''}
+                                        {product.star === 5 ? <div className={css.productItemStar}><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div> : ''}
                                     </div>
                                     {product.oldPrice ? <span className={css.saleLabel}><p className={css.saleLabelSale}>{(((product.price / product.oldPrice) * 100) - 100).toFixed(0) }%</p></span> : ''}
-                                </a>
+                                </div>
                             )
                         })}
                     </div>
@@ -853,7 +823,7 @@ function HairStore() {
         const trademarkListImg = useRef()
 
         function handleTransferProduct(value) {
-            if(value == 'left') {
+            if(value === 'left') {
                 if(trademarkSlider >= 0) {
                     buttonClickLeft.current.style.cursor = 'no-drop'
                 }else {
@@ -861,7 +831,7 @@ function HairStore() {
                     buttonClickLeft.current.style.cursor = 'pointer'
                     buttonClickRight.current.style.cursor = 'pointer'
                 }
-            }else if(value == 'right'){
+            }else if(value === 'right'){
                 if(trademarkSlider <= -16) {
                     buttonClickRight.current.style.cursor = 'no-drop'
                     buttonClickLeft.current.style.cursor = 'pointer'

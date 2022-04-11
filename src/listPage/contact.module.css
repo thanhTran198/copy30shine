@@ -33,3 +33,7 @@
     transform: translateX(-3%);
     padding-top: 14px;
 }
+
+.contactContainerPhone:hover, .contactContainerMessage:hover {
+    opacity: 0.8;
+}
