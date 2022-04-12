@@ -1,3 +1,4 @@
+import React from 'react'
 // import clsx from 'clsx';
 import css from './30shineShop.module.css'
 import Footer from './Footer'

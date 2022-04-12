@@ -1,3 +1,4 @@
+import React from 'react'
 // import shop from './shop.module.css';
 import Footer from './Footer'
 import Contact from './Contact'

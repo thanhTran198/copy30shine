@@ -1,3 +1,4 @@
+import React from 'react'
 import Footer from './Footer'
 import css from './hairStyle.module.css'
 import { FaHeart,  FaShare } from 'react-icons/fa';

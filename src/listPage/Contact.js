@@ -1,3 +1,4 @@
+import React from 'react'
 import css from '../listPage/contact.module.css'
 import imgMessage from '../asset/imgs/home/contact/messenger.png'
 import imgPhone from '../asset/imgs/home/contact/phoneNew.png'

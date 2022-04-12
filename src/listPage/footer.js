@@ -1,3 +1,4 @@
+import React from 'react'
 import footer from './footer.module.css'
 
 import imgCongThuong from '../asset/imgs/footer/congthuongicon.png'

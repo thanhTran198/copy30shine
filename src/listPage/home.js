@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useRef, useState } from 'react';
 import { FaAngleRight, FaAngleLeft, FaArrowRight } from 'react-icons/fa'
 import Footer from './Footer'
