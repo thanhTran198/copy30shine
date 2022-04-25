@@ -6,7 +6,7 @@ import imgPhone from '../asset/imgs/home/contact/phoneNew.png'
 const Contact = ()=> {
     return(
         <div className={css.contact}>
-            <div className={css.contactContainerPhone}>
+            <div onClick={()=>{window.open("tel:0703962534")}} className={css.contactContainerPhone}>
                 <img className={css.contactImgPhone} src={imgPhone} alt=""/>
             </div>
             <div className={css.contactContainerMessage}>

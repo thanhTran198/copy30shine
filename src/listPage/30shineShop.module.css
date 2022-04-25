@@ -1,3 +1,7 @@
+:root {
+    --primary-color: rgb(255 204 51);
+}
+
 #page {
     position: relative;
 }
@@ -313,6 +317,7 @@
 
 .productItemImg {
     width: 222px;
+    height: 222px;
     border-radius:5px;
 }
 
@@ -525,6 +530,7 @@
 
 .productsItemImg {
     width: 222px;
+    height: 222px;
     border-radius:5px;
 }
 
@@ -616,6 +622,11 @@
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.seeMoreProducts:active {
+    opacity: 0.7;
 }
 
 .seeMoreProductsText {
@@ -718,4 +729,368 @@
 
 .trademarkIconLeft {
     left: 4px;
+}
+
+/* combo sản phẩm */
+
+.containerCombo {
+    margin: 0 auto;
+    padding-top: 90px;
+    width: 1244px;
+}
+
+.titleCombo {
+    margin: 20px 0;
+}
+
+.bodyCombo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listComboProduct {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.containerComboProduct {
+    width: 78.5%;
+}
+
+.containerComboTitle {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 16px;
+}
+
+.ProductArrangements {
+    display: flex;
+    align-items: center;
+}
+
+.ProductArrangementsChoose {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    border-radius:5px;
+    margin-left: 10px;
+    width: 178px;
+    position: relative;
+}
+
+.sortOption {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    border-radius: 5px;
+    background-color:#fff;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    z-index: 1;
+    display: none;
+}
+
+.sortOptionItem {
+    padding: 6px;
+    border-top: 1px solid rgb(209 209 209);
+    cursor: pointer;
+}
+
+.sortOptionItem:first-child {
+    border-top: none;
+}
+
+.ProductArrangementsChooseText {
+    margin-right: 6px;
+}
+
+.containerFilterProducts {
+    width: 20%;
+    height: max-content;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    border-radius:5px;
+}
+
+.filterProducts {
+    padding: 12px;
+}
+
+.filterProductsSub {
+    border-bottom: 2px solid rgb(209 209 209);
+}
+
+.filterProductsSubText {
+    margin: 16px 0;
+}
+
+.SearchByPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SearchByPriceItem {
+    position: relative;
+}
+
+.SearchByPriceText {
+    font-size: 16px;
+    color: #333;
+}
+
+.SearchByPriceInput {
+    width: 96px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid #898989;
+    color: #666;
+    font-weight: 600;
+}
+
+.SearchByPriceUnit {
+    position: absolute;
+    font-size: 16px;
+    top: 49.5%;
+    left: 4px;
+    font-weight: 600;
+    color: #666;
+    text-decoration: underline;
+}
+
+.SearchByPriceItemSub {
+    font-weight: 800;
+    color: #666;
+}
+
+.filterProductsSubBtn {
+    background-color: #fff;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    border-radius:5px;
+    padding: 10px 14px;
+    margin: 20px 0;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+.filterProductsSubBtn:active {
+    opacity: 0.5;
+}
+
+.evaluate {
+    padding: 12px 12px 20px 12px; 
+    border-bottom: 2px solid rgb(209 209 209);
+}
+
+.evaluateTextTitle {
+    margin: 14px 0;
+}
+
+.evaluateStar {
+    display: flex;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.evaluateStar:hover .evaluateStarText{
+    color: var(--primary-color);
+}
+
+.evaluateStarStar {
+    color: var(--primary-color);
+    display: flex;
+    justify-content:space-between;
+    width: 120px;
+}
+
+.evaluateStarText {
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.listTrademark {
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(209 209 209);
+}
+
+.listTrademarkTitle {
+    margin: 18px 0;
+}
+
+.listTrademarkContainerInput {
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.listTrademarkInput {
+    background-color: rgba(249, 250, 251, 0.719);
+    font-size: 16px;
+    padding: 7px;
+    width: 85%;
+    outline: none;
+    border: none;
+}
+
+.listTrademarkContainerInputIcon {
+    position: absolute;
+    right: 6px;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+}
+
+.containerNameTrademarkItem {
+    margin: 8px 0;
+}
+
+.NameTrademark {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+/* check thay đổi kiểu nhưng chưa được */
+.NameTrademark:checked {    
+    background-image: url(https://i.imgur.com/CHsIdIj.png);
+    border-color: #5f5f5f;
+    background-color: #fff;
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.allTrademark {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+}
+
+.allTrademarkText {
+    text-decoration: underline;
+    margin-right: 6px;
+}
+
+.containerDeleteFilter {
+    text-align: center;
+}
+
+.deleteFilter {
+    margin: 10px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.192);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+}
+
+/* phần Giới Thiệu của 30shine Shop */
+
+.introduce {
+    padding-top: 91px;
+}
+
+.introduce_Slider_img {
+    width: 100%;
+}
+
+.introduce_container_Body {
+    width: 1244px;
+    margin: 86px auto;
+}
+
+.introduce_body_item_main {
+    width: 760px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introduce_body_item_title {
+    margin: 16px 0;
+    font-size: 28px;
+}
+
+.introduce_body_list_container_item {
+    display: flex;
+    justify-content:space-between;
+    margin: 60px 0;
+}
+
+.introduce_body_list_item {
+    width: 400px;
+    text-align: center;
+}
+
+.introduce_body_list_item_title {
+    margin: 4px 0 16px 0;
+}
+
+.introduce_body_Item1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.introduce_body_Item_text {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.introduce_body_Item1_image {
+    width: 620px;
+}
+
+.introduce_body_Item2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+
+.introduce_footer_Of_body_title {
+    width: 730px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduce_footer_Of_body_title_text {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.introduce_footer_Of_body_List {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.introduce_footer_Of_body_List_item {
+    width: 400px;
+    height: 210px;
+    text-align: center;  
+    margin: 11px 0;
+    box-shadow: 0 0 10px rgba(69, 69, 69, 0.084);
+}
+
+.footer_Of_body_List_item_text {
+    margin: 6px 0 12px 0;
 }

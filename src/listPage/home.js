@@ -96,7 +96,7 @@ import imgNearestOther from '../asset/imgs/home/nearest/salon-other.png'
 
 function Home() {
 
-
+    // phần slider của ảnh
     const Slider = ()=> {
         // lấy ra các element img
         const sliderItem1 = useRef()
