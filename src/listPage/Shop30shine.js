@@ -73,10 +73,10 @@ function HairStore() {
 
     // gọi API
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://thanhtran198.github.io/API-json30shine/productCombos.json')
             .then(res => res.json())
             .then((listItems) => {
-                setListAllProducts(listItems)
+                setListAllProducts(listItems.products)
             })
     }, [])
 
@@ -641,10 +641,10 @@ function HairStore() {
 
         useEffect(()=>{
             if(value.name === "COMBO SIÊU TIẾT KIỆM") {
-                fetch('http://localhost:5000/product_combos')
+                fetch('https://thanhtran198.github.io/API-json30shine/productCombos.json')
                     .then(res => res.json())
                     .then((listItems) => {
-                        setListProductItems(listItems)
+                        setListProductItems(listItems.product_combos)
                     })
             }else if(value.name === "SẢN PHẨM BÁN CHẠY NHẤT") {
                 let productTopSale = []
